@@ -1,0 +1,114 @@
+{
+  "header": {
+    "label": "WARNER RECORDS",
+    "year": "2026",
+    "title": "2026 HOLIDAY RELEASES"
+  },
+  "holidayHits": [
+    {
+      "id": "adore",
+      "artist": "ADORE",
+      "title": "HOLIDAY RELEASE",
+      "format": "DIGITAL / SINGLE",
+      "date": "OCT / NOV 2026",
+      "focus": "NEW HOLIDAY SINGLE"
+    },
+    {
+      "id": "lucky-daye",
+      "artist": "LUCKY DAYE",
+      "title": "HOLIDAY SOUL",
+      "format": "DIGITAL / SINGLE",
+      "date": "OCT / NOV 2026",
+      "focus": "FESTIVE R&B ORIGINAL"
+    },
+    {
+      "id": "goo-goo-dolls-2026",
+      "artist": "GOO GOO DOLLS",
+      "title": "HOLIDAY SELECTION",
+      "format": "VINYL / DIGITAL",
+      "date": "OCT / NOV 2026",
+      "focus": "NEW RECORDING"
+    },
+    {
+      "id": "ryan-peter-murphy",
+      "artist": "RYAN PETER MURPHY",
+      "title": "ACOUSTIC CHRISTMAS",
+      "format": "DIGITAL",
+      "date": "NOV 2026",
+      "focus": "SEASONAL ORIGINAL"
+    },
+    {
+      "id": "dan-and-shay",
+      "artist": "DAN + SHAY",
+      "title": "HOLIDAY HARMONIES",
+      "format": "DSP / DIGITAL",
+      "date": "NOV 2026",
+      "focus": "WARM COUNTRY HOLIDAY"
+    },
+    {
+      "id": "highway-home",
+      "artist": "HIGHWAY HOME",
+      "title": "FIRESIDE SESSIONS",
+      "format": "DIGITAL / SINGLE",
+      "date": "NOV 2026",
+      "focus": "AMERICANA CHRISTMAS"
+    }
+  ],
+  "dollySpotlight": {
+    "artist": "DOLLY PARTON",
+    "album": "A HOLLY DOLLY CHRISTMAS (ULTIMATE DELUXE EDITION)",
+    "type": "[ALBUM]",
+    "focusTrack": "CUDDLE UP, COZY DOWN CHRISTMAS (FEAT. MICHAEL BUBLÉ)",
+    "note": "Top Holiday Priority"
+  },
+  "endlessHolidayCheer": [
+    {
+      "artist": "MICHAEL BUBLÉ",
+      "album": "CHRISTMAS (DELUXE 10TH ANNIVERSARY EDITION)",
+      "type": "[ALBUM]",
+      "focus": "IT'S BEGINNING TO LOOK A LOT LIKE CHRISTMAS"
+    },
+    {
+      "artist": "DASHA",
+      "album": "DRIVING HOME FOR CHRISTMAS",
+      "type": "[SINGLE]",
+      "focus": "DRIVING HOME FOR CHRISTMAS"
+    },
+    {
+      "artist": "WARREN ZEIDERS",
+      "album": "HOW GREAT THOU ART",
+      "type": "[SINGLE]",
+      "focus": "HOW GREAT THOU ART"
+    },
+    {
+      "artist": "JOSH GROBAN",
+      "album": "NOËL",
+      "type": "[ALBUM]",
+      "focus": "BELIEVE"
+    },
+    {
+      "artist": "CHER",
+      "album": "CHRISTMAS",
+      "type": "[ALBUM]",
+      "focus": "DJ PLAY A CHRISTMAS SONG"
+    },
+    {
+      "artist": "TEDDY SWIMS",
+      "album": "A VERY TEDDY CHRISTMAS",
+      "type": "[EP]",
+      "focus": "SILENT NIGHT"
+    },
+    {
+      "artist": "THE GOO GOO DOLLS",
+      "album": "IT'S CHRISTMAS ALL OVER",
+      "type": "[ALBUM]",
+      "focus": "CHRISTMAS ALL OVER AGAIN"
+    },
+    {
+      "artist": "FAITH HILL",
+      "album": "JOY TO THE WORLD",
+      "type": "[ALBUM]",
+      "focus": "O COME, ALL YE FAITHFUL"
+    }
+  ]
+}
