@@ -23,7 +23,7 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
     <div className="relative min-h-screen text-amber-50">
       <div
         className="fixed inset-0 -z-10 bg-cover bg-center"
-        style={{ backgroundImage: "url('/bg/dolly.jpg')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}bg/dolly.jpg')` }}
       />
       <div className="fixed inset-0 -z-10 bg-gradient-to-b from-black/35 via-black/25 to-black/55" />
 

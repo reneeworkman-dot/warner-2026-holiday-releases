@@ -57,7 +57,7 @@ export const App: React.FC = () => {
     <div className="relative min-h-screen text-amber-50">
       <div
         className="fixed inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/bg/holiday.jpg')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}bg/holiday.jpg')` }}
       />
       <div className="fixed inset-0 -z-10 bg-black/25" />
       <SimpleSnow />
