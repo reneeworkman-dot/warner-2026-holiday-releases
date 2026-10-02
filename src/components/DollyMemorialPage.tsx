@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { dollyMemorial } from '../data/catalogFull';
 import { audioEngine } from '../audio/audioEngine';
+import { WarnerLogo } from './WarnerLogo';
 
 interface Props {
   onBack: () => void;
@@ -28,13 +29,16 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
       <div className="fixed inset-0 -z-10 bg-gradient-to-b from-black/35 via-black/25 to-black/55" />
 
       <div className="relative max-w-2xl mx-auto px-5 py-10">
-        <button
-          type="button"
-          onClick={onBack}
-          className="font-handwriting text-2xl text-amber-100 hover:text-white cursor-pointer [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]"
-        >
-          ← back
-        </button>
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            onClick={onBack}
+            className="font-handwriting text-2xl text-amber-100 hover:text-white cursor-pointer [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]"
+          >
+            ← back
+          </button>
+          <WarnerLogo />
+        </div>
 
         <header className="mt-12 text-center">
           <p className="font-note text-sm tracking-[0.25em] uppercase text-amber-200 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
@@ -107,6 +111,10 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
             </li>
           ))}
         </ul>
+
+        <div className="mt-16 pb-4 flex justify-center">
+          <WarnerLogo />
+        </div>
       </div>
     </div>
   );

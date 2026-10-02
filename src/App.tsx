@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SimpleSnow } from './components/SimpleSnow';
+import { WarnerLogo } from './components/WarnerLogo';
 import { DollyOrnament } from './components/DollyOrnament';
 import { DollyMemorialPage } from './components/DollyMemorialPage';
 import { ReleaseCardWithUpload } from './components/ReleaseCardWithUpload';
@@ -63,24 +64,27 @@ export const App: React.FC = () => {
       <SimpleSnow />
 
       <main className="relative z-10 max-w-4xl mx-auto px-5 py-8">
-        <div className="flex justify-end gap-5 text-sm font-note text-amber-100/90">
-          <button type="button" onClick={handleShareLink} className="cursor-pointer hover:text-white">
-            {copied ? 'copied' : 'share'}
-          </button>
-          <a
-            href="mailto:sync.holiday@warnerrecords.com?subject=Warner%20Records%202026%20Holiday%20Inquiry"
-            className="hover:text-white"
-          >
-            write us
-          </a>
+        <div className="flex items-center justify-between gap-5">
+          <WarnerLogo />
+          <div className="flex gap-5 text-sm font-note text-amber-100/90">
+            <button type="button" onClick={handleShareLink} className="cursor-pointer hover:text-white">
+              {copied ? 'copied' : 'share'}
+            </button>
+            <a
+              href="mailto:sync.holiday@warnerrecords.com?subject=Warner%20Records%202026%20Holiday%20Inquiry"
+              className="hover:text-white"
+            >
+              write us
+            </a>
+          </div>
         </div>
 
         <header className="text-center mt-10 mb-6">
-          <h1 className="font-serif text-4xl sm:text-6xl text-white leading-tight [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
-            WR 2026 Holiday releases
+          <h1 className="display font-black uppercase text-4xl sm:text-6xl text-white leading-tight tracking-wide [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
+            WR 2026 Holiday Releases
           </h1>
           <h2 className="font-handwriting text-4xl sm:text-5xl text-amber-100 mt-1 [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
-            holiday hits
+            Holiday Hits
           </h2>
         </header>
 
@@ -108,8 +112,9 @@ export const App: React.FC = () => {
 
         <GiftOfChristmasPast onPlayChime={handlePlayChime} playingTrack={playingTrack} />
 
-        <footer className="mt-16 pb-8 text-center font-note text-sm text-amber-100/80 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
-          Warner Records · sync.holiday@warnerrecords.com
+        <footer className="mt-16 pb-8 flex flex-col items-center gap-3 text-center font-note text-sm text-amber-100/80 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
+          <WarnerLogo />
+          <span>Warner Records · sync.holiday@warnerrecords.com</span>
         </footer>
       </main>
     </div>
