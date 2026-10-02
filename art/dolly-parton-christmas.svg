@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="dolly-bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#ff7b90" />
+      <stop offset="45%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#880c25" />
+    </radialGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#dolly-bg)" />
+
+  <!-- Cute Scalloped & Dotted Border -->
+  <rect x="25" y="25" width="550" height="550" rx="36" fill="none" stroke="#fff1f2" stroke-width="4" stroke-dasharray="10 8" opacity="0.8" />
+  <rect x="35" y="35" width="530" height="530" rx="28" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.6" />
+
+  <!-- Corner Holly Sprigs -->
+  <!-- Top Left -->
+  <g transform="translate(45, 45)">
+    <circle cx="10" cy="10" r="7" fill="#dc2626" />
+    <circle cx="22" cy="12" r="6" fill="#ef4444" />
+    <circle cx="16" cy="22" r="6.5" fill="#b91c1c" />
+    <path d="M 12 10 Q 0 -10 -15 2 Q 5 15 12 10 Z" fill="#15803d" />
+    <path d="M 22 12 Q 35 -5 45 10 Q 25 22 22 12 Z" fill="#16a34a" />
+  </g>
+  <!-- Top Right -->
+  <g transform="translate(525, 45)">
+    <circle cx="10" cy="10" r="7" fill="#dc2626" />
+    <circle cx="-2" cy="12" r="6" fill="#ef4444" />
+    <circle cx="4" cy="22" r="6.5" fill="#b91c1c" />
+    <path d="M 10 10 Q 25 -10 40 2 Q 20 15 10 10 Z" fill="#15803d" />
+    <path d="M -2 12 Q -20 -5 -30 10 Q -10 22 -2 12 Z" fill="#16a34a" />
+  </g>
+
+  <!-- Twinkling Sparkles & Little Snow Dots -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="120" cy="140" r="4" />
+    <circle cx="480" cy="150" r="3.5" />
+    <circle cx="90" cy="460" r="3" />
+    <circle cx="510" cy="450" r="4" />
+    <circle cx="200" cy="100" r="2.5" />
+    <circle cx="400" cy="110" r="2.5" />
+  </g>
+
+  <!-- Dolly Butterfly & Rhinestone Crest -->
+  <g transform="translate(300, 150)">
+    <!-- Butterfly wings in gold and pastel pink -->
+    <path d="M 0 0 C -35 -45 -90 -35 -75 20 C -60 55 -20 25 0 8 Z" fill="#fef08a" opacity="0.9" />
+    <path d="M 0 0 C 35 -45 90 -35 75 20 C 60 55 20 25 0 8 Z" fill="#fef08a" opacity="0.9" />
+    <path d="M 0 8 C -25 25 -50 65 -25 70 C -5 70 -5 30 0 15 Z" fill="#fed7aa" opacity="0.85" />
+    <path d="M 0 8 C 25 25 50 65 25 70 C 5 70 5 30 0 15 Z" fill="#fed7aa" opacity="0.85" />
+    <!-- Butterfly Body -->
+    <ellipse cx="0" cy="18" rx="5" ry="24" fill="#ffffff" filter="url(#soft-glow)" />
+    <circle cx="-8" cy="-14" r="3" fill="#ffffff" />
+    <circle cx="8" cy="-14" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- Big Festive Banner -->
+  <g transform="translate(300, 275)" text-anchor="middle">
+    <!-- Cute Rhinestone / Sparkle Line -->
+    <text x="0" y="-30" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#fef08a" letter-spacing="4">★ SMOKY MOUNTAIN CHRISTMAS QUEEN ★</text>
+    
+    <!-- DOLLY Name -->
+    <text x="0" y="45" font-family="'Cinzel', Georgia, serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="6" filter="url(#soft-glow)">DOLLY</text>
+    <text x="0" y="105" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-size="42" font-weight="700" fill="#fef08a" letter-spacing="3">Parton</text>
+
+    <!-- Album Name -->
+    <rect x="-210" y="130" width="420" height="42" rx="21" fill="#4c0519" stroke="#fef08a" stroke-width="2" />
+    <text x="0" y="157" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="2">A HOLLY DOLLY CHRISTMAS</text>
+
+    <!-- Subtag -->
+    <text x="0" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#ffe4e6" letter-spacing="1">ULTIMATE DELUXE EDITION • 20 TRACKS</text>
+    
+    <!-- Mini cute track list badge -->
+    <text x="0" y="226" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#fbcfe8">
+      ft. Michael Bublé • Miley Cyrus • Willie Nelson • Jimmy Fallon
+    </text>
+  </g>
+</svg>
