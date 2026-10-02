@@ -10,13 +10,13 @@ export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack
   return (
     <section className="w-full mt-6 pt-4">
       <h2 className="font-serif text-3xl sm:text-5xl text-white text-center [text-shadow:0_2px_14px_rgba(0,0,0,0.8)]">
-        the gift of christmas past
+        The Gift of Christmas Past
       </h2>
       <p className="font-handwriting text-2xl text-amber-100 text-center mt-1 [text-shadow:0_2px_8px_rgba(0,0,0,0.75)]">
-        everything already out in the world
+        Everything Already Out in the World
       </p>
 
-      <div className="mt-10 space-y-12">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
         {pastReleases.map((group) => (
           <div key={group.category}>
             <h3 className="font-note text-amber-200 text-lg mb-2 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
