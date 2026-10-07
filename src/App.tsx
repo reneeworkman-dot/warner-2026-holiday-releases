@@ -102,7 +102,10 @@ export const App: React.FC = () => {
           />
         </div>
 
-        <GiftOfChristmasPast onPlayChime={handlePlayChime} playingTrack={playingTrack} />
+        <GiftOfChristmasPast
+          uploadedPhotos={uploadedPhotos}
+          onUploadImage={handleUploadImage}
+        />
 
         <footer className="mt-16 pb-8 flex justify-center">
           <WarnerLogo />
