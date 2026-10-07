@@ -16,24 +16,12 @@ const facts = (...parts: Array<string | undefined>) => parts.filter((part): part
 
 export const newReleases: Release[] = [
   {
-    id: 'ryan-peter-murphy-single',
+    id: 'ryan-peter-murphy',
     artist: 'Ryan Peter Murphy',
     title: 'Christmas in New England',
-    format: 'Single',
     genre: 'Holiday',
-    date: 'Oct 9, 2026',
     label: 'WR',
-    bullets: facts('Genre: Holiday'),
-  },
-  {
-    id: 'ryan-peter-murphy-album',
-    artist: 'Ryan Peter Murphy',
-    title: 'Christmas in New England',
-    format: 'Album',
-    genre: 'Holiday',
-    date: 'Oct 23, 2026',
-    label: 'WR',
-    bullets: facts('Genre: Holiday'),
+    bullets: facts('Single · Oct 9, 2026', 'Album · Oct 23, 2026', 'Genre: Holiday'),
   },
   {
     id: 'anna-rae-shouldnt',

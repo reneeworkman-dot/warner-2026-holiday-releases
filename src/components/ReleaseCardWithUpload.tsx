@@ -47,9 +47,11 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
       />
 
       <div className="pt-3">
-        <p className="font-note text-xs text-amber-200/90">
-          {[release.date, release.format].filter(Boolean).join(' · ')}
-        </p>
+        {[release.date, release.format].some(Boolean) && (
+          <p className="font-note text-xs text-amber-200/90">
+            {[release.date, release.format].filter(Boolean).join(' · ')}
+          </p>
+        )}
         <h3 className="font-serif text-xl text-white leading-tight mt-0.5 [text-shadow:0_2px_10px_rgba(0,0,0,0.7)]">
           {release.artist}
         </h3>
