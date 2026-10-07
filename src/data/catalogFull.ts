@@ -197,11 +197,11 @@ export const pastReleases = [
       },
       {
         artist: 'Maddox Batson',
-        title: '“Maddox Batson: Home for the Holidays”',
+        title: '“Home for the Holidays”',
         format: '2 Track Bundle',
         genre: 'Country / Holiday',
         date: 'Nov 13, 2025',
-        bullets: facts('Genre: Country / Holiday', 'Originals'),
+        bullets: facts('Last Christmas / I’ll Be Home For Christmas', 'Genre: Country / Holiday', 'Originals'),
       },
       {
         artist: 'Dasha',
