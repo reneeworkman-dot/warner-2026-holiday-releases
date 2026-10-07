@@ -41,30 +41,31 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
         </div>
 
         <header className="mt-12 text-center">
-          <p className="font-note text-sm tracking-[0.25em] uppercase text-amber-200 [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-            in her memory
-          </p>
           <h1 className="font-serif text-5xl sm:text-6xl text-white mt-2 [text-shadow:0_3px_16px_rgba(0,0,0,0.85)]">
             Dolly Parton
           </h1>
-          <p className="font-handwriting text-3xl text-amber-100 mt-2 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
-            {dollyMemorial.tagline}
-          </p>
           <p className="mt-6 font-serif italic text-xl text-amber-50 leading-relaxed [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
             {dollyMemorial.tributeQuote}
-          </p>
-          <p className="mt-5 text-sm leading-relaxed text-amber-50/95 [text-shadow:0_2px_8px_rgba(0,0,0,0.85)]">
-            {dollyMemorial.memorialNote}
           </p>
         </header>
 
         <section className="mt-14">
-          <p className="font-note text-amber-200 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
-            A Holly Dolly Christmas
+          <p className="font-note text-sm text-amber-200/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
+            {dollyMemorial.date} · {dollyMemorial.format}
           </p>
           <h2 className="font-serif text-3xl text-white mt-1 [text-shadow:0_2px_12px_rgba(0,0,0,0.85)]">
-            {dollyMemorial.focusTrack}
+            {dollyMemorial.albumTitle}
           </h2>
+          <ul className="mt-4 space-y-1.5">
+            <li className="flex gap-2 text-sm text-amber-50/95 [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
+              <span className="text-amber-200">❄</span>
+              <span>Genre: {dollyMemorial.genre}</span>
+            </li>
+            <li className="flex gap-2 text-sm text-amber-50/95 [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
+              <span className="text-amber-200">❄</span>
+              <span>Focus: {dollyMemorial.focusTrack}</span>
+            </li>
+          </ul>
           <button
             type="button"
             onClick={() => handlePlay(dollyMemorial.focusTrack, 'Dolly Parton & Michael Bublé')}
@@ -73,44 +74,6 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
             {playingTrack === dollyMemorial.focusTrack ? 'stop the bells' : 'listen'}
           </button>
         </section>
-
-        <ul className="mt-10">
-          {dollyMemorial.tracks.map((t) => {
-            const on = playingTrack === t.title;
-            return (
-              <li key={t.title} className="py-4 border-b border-white/20">
-                <button
-                  type="button"
-                  onClick={() => handlePlay(t.title, t.artist)}
-                  className="w-full text-left cursor-pointer"
-                >
-                  <p className="font-serif text-lg text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.8)]">
-                    {t.title}
-                  </p>
-                  <p className="text-sm text-amber-100/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
-                    {t.artist}
-                  </p>
-                  <p className="mt-1 flex gap-2 text-sm text-amber-50/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
-                    <span>❄</span>
-                    <span>{t.vibe}</span>
-                  </p>
-                  <span className="font-handwriting text-lg text-amber-100">
-                    {on ? 'playing' : 'listen'}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-
-        <ul className="mt-10 space-y-2">
-          {dollyMemorial.legacyHighlights.map((h) => (
-            <li key={h} className="flex gap-2 text-sm text-amber-50 [text-shadow:0_1px_6px_rgba(0,0,0,0.85)]">
-              <span className="text-amber-200">❄</span>
-              <span>{h}</span>
-            </li>
-          ))}
-        </ul>
 
         <div className="mt-16 pb-4 flex justify-center">
           <WarnerLogo />

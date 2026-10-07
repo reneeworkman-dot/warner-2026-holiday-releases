@@ -8,18 +8,13 @@ interface Props {
 
 type PastItem = (typeof pastReleases)[number]['items'][number];
 
-const leftNames = ['TEDDY SWIMS', 'SAWEETIE', 'GRIFF', 'PATRICK DRONEY', 'MORGAN WADE'];
-
-const isRealDate = (label?: string) => /\b(19|20)\d{2}\b/.test(label || '');
+const isRealDate = (label?: string) => /\b(19|20)\d{2}\b/.test(label || '') || label === 'TBD';
 
 export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack }) => {
-  const favorites = pastReleases[0]?.items ?? [];
-  const evergreen = pastReleases[1]?.items ?? [];
-  const moved = leftNames
-    .map((name) => evergreen.find((item) => item.artist === name))
-    .filter((item): item is PastItem => Boolean(item));
-  const left = [...favorites, ...moved];
-  const right = evergreen.filter((item) => !leftNames.includes(item.artist));
+  const items = pastReleases.flatMap((group) => group.items);
+  const midpoint = Math.ceil(items.length / 2);
+  const left = items.slice(0, midpoint);
+  const right = items.slice(midpoint);
 
   const renderItem = (item: PastItem, trackKey: string) => {
     const isPlaying = playingTrack === trackKey;
@@ -43,7 +38,7 @@ export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack
           )}
         </div>
         <ul className="mt-2 space-y-1">
-          {item.bullets.map((b) => (
+          {[`Format: ${item.format}`, ...item.bullets].map((b) => (
             <li key={b} className="flex gap-2 text-sm text-amber-50/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
               <span className="text-amber-200">❄</span>
               <span>{b}</span>
