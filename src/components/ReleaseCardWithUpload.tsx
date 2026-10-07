@@ -13,8 +13,6 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
   release,
   customImage,
   onUploadImage,
-  onPlayChime,
-  isPlaying,
 }) => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -67,14 +65,6 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
             </li>
           ))}
         </ul>
-
-        <button
-          type="button"
-          onClick={() => onPlayChime(release.id, release.title, release.artist)}
-          className="mt-2.5 font-handwriting text-lg text-amber-100 hover:text-white cursor-pointer"
-        >
-          {isPlaying ? 'stop the bells' : 'listen'}
-        </button>
       </div>
     </article>
   );

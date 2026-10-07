@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { dollyMemorial } from '../data/catalogFull';
-import { audioEngine } from '../audio/audioEngine';
 import { WarnerLogo } from './WarnerLogo';
 
 interface Props {
@@ -8,18 +7,6 @@ interface Props {
 }
 
 export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
-  const [playingTrack, setPlayingTrack] = useState<string | null>(null);
-
-  const handlePlay = (title: string, artist: string) => {
-    if (playingTrack === title) {
-      audioEngine.stop();
-      setPlayingTrack(null);
-    } else {
-      setPlayingTrack(title);
-      audioEngine.playPreview(title, title, artist);
-    }
-  };
-
   return (
     <div className="relative min-h-screen text-amber-50">
       <div
@@ -66,13 +53,6 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
               <span>Focus: {dollyMemorial.focusTrack}</span>
             </li>
           </ul>
-          <button
-            type="button"
-            onClick={() => handlePlay(dollyMemorial.focusTrack, 'Dolly Parton & Michael Bublé')}
-            className="mt-3 font-handwriting text-2xl text-amber-100 hover:text-white cursor-pointer"
-          >
-            {playingTrack === dollyMemorial.focusTrack ? 'stop the bells' : 'listen'}
-          </button>
         </section>
 
         <div className="mt-16 pb-4 flex justify-center">

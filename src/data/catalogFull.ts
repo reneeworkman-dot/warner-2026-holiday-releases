@@ -12,12 +12,7 @@ export type Release = {
   notes?: string;
 };
 
-const facts = (genre?: string, focus?: string, label?: string) =>
-  [
-    genre ? `Genre: ${genre}` : '',
-    focus ? `Focus: ${focus}` : '',
-    label ? `Label: ${label}` : '',
-  ].filter(Boolean);
+const facts = (...parts: Array<string | undefined>) => parts.filter((part): part is string => Boolean(part));
 
 export const newReleases: Release[] = [
   {
@@ -28,7 +23,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Oct 9, 2026',
     label: 'WR',
-    bullets: facts('Holiday', undefined, 'WR'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'ryan-peter-murphy-album',
@@ -38,7 +33,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Oct 23, 2026',
     label: 'WR',
-    bullets: facts('Holiday', undefined, 'WR'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'anna-rae-shouldnt',
@@ -48,7 +43,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday / Country',
     date: 'Oct 30, 2026',
     label: 'JOA/NASH',
-    bullets: facts('Holiday / Country', undefined, 'JOA/NASH'),
+    bullets: facts('Genre: Holiday / Country'),
   },
   {
     id: 'ingrid-andress',
@@ -58,7 +53,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Oct 30, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'highway-home',
@@ -68,7 +63,7 @@ export const newReleases: Release[] = [
     genre: 'Country',
     date: 'Nov 6, 2026',
     label: 'WR',
-    bullets: facts('Country', undefined, 'WR'),
+    bullets: facts('Genre: Country'),
   },
   {
     id: 'adore-2026',
@@ -78,7 +73,7 @@ export const newReleases: Release[] = [
     genre: 'Pop / Alternative',
     date: 'Nov 6, 2026',
     label: 'WR',
-    bullets: facts('Pop / Alternative', undefined, 'WR'),
+    bullets: facts('Genre: Pop / Alternative'),
   },
   {
     id: 'dan-shay-beginning',
@@ -88,7 +83,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 6, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'morgan-wade-list',
@@ -98,7 +93,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 6, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'anna-rae-eve',
@@ -108,7 +103,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 13, 2026',
     label: 'JOA/NASH',
-    bullets: facts('Holiday', undefined, 'JOA/NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'jenna-raine',
@@ -118,7 +113,7 @@ export const newReleases: Release[] = [
     genre: 'Pop',
     date: 'Nov 13, 2026',
     label: 'WR',
-    bullets: facts('Pop', undefined, 'WR'),
+    bullets: facts('Genre: Pop'),
   },
   {
     id: 'tyler-braden',
@@ -128,7 +123,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 13, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'lucky-daye-2026',
@@ -138,7 +133,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 23, 2026',
     label: 'WR',
-    bullets: facts('Holiday', undefined, 'WR'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'colton-dawson',
@@ -148,7 +143,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 24, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'slater-nalley',
@@ -158,7 +153,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Dec 11, 2026',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'hailey-hutcheson',
@@ -168,7 +163,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'TBD',
     label: 'NASH',
-    bullets: facts('Holiday', undefined, 'NASH'),
+    bullets: facts('Genre: Holiday'),
   },
   {
     id: 'goo-goo-dolls-tbd',
@@ -178,7 +173,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'TBD',
     label: 'WR',
-    bullets: facts('Holiday', undefined, 'WR'),
+    bullets: facts('Genre: Holiday'),
   },
 ];
 
@@ -202,23 +197,23 @@ export const pastReleases = [
         format: 'EP',
         genre: 'Holiday / Country',
         date: 'Nov 26, 2025',
-        bullets: facts('Holiday / Country'),
+        bullets: facts('Genre: Holiday / Country', 'Cover'),
       },
       {
         artist: 'Alex Isley',
-        title: '“The Christmas Song”',
+        title: '“Christmas Song”',
         format: 'Single',
         genre: 'R&B / Holiday',
         date: 'Nov 14, 2025',
-        bullets: facts('R&B / Holiday'),
+        bullets: facts('Genre: R&B / Holiday', 'Cover'),
       },
       {
         artist: 'Maddox Batson',
         title: '“Maddox Batson: Home for the Holidays”',
-        format: '2 Pack Single',
+        format: '2 Track Bundle',
         genre: 'Country / Holiday',
         date: 'Nov 13, 2025',
-        bullets: facts('Country / Holiday'),
+        bullets: facts('Genre: Country / Holiday', 'Originals'),
       },
       {
         artist: 'Dasha',
@@ -226,7 +221,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Country / Holiday',
         date: 'Nov 7, 2025',
-        bullets: facts('Country / Holiday'),
+        bullets: facts('Genre: Country / Holiday', 'Cover'),
       },
       {
         artist: 'Honey Bxby',
@@ -234,16 +229,24 @@ export const pastReleases = [
         format: 'Single',
         genre: 'R&B',
         date: 'Nov 7, 2025',
-        bullets: facts('R&B'),
+        bullets: facts('Genre: R&B', 'Original'),
+      },
+      {
+        artist: 'Suubi',
+        title: '“Last Christmas”',
+        format: 'Single',
+        genre: 'Holiday',
+        date: 'TBD',
+        bullets: facts('Genre: Holiday', 'Cover'),
       },
       {
         artist: 'Gabby Barrett',
-        title: 'Candles and Candlelight',
+        title: 'Carols and Candlelight (Deluxe)',
         format: 'Album',
         genre: 'Holiday / Country',
         date: 'Nov 7, 2025',
         focus: '“Where Are You Christmas”',
-        bullets: facts('Holiday / Country', '“Where Are You Christmas” — off the Deluxe'),
+        bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas”', 'Single released Oct 24, 2025'),
       },
       {
         artist: 'Dan + Shay',
@@ -251,7 +254,14 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Holiday',
         date: 'Nov 7, 2025',
-        bullets: facts('Holiday'),
+        bullets: facts('Genre: Holiday', 'Original'),
+      },
+      {
+        artist: 'Dan + Shay',
+        title: '“Officially Christmas”',
+        format: 'Single',
+        genre: 'Holiday',
+        bullets: facts('Genre: Holiday'),
       },
       {
         artist: 'Warren Zeiders',
@@ -259,7 +269,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Gospel / Country',
         date: 'Oct 31, 2025',
-        bullets: facts('Gospel / Country'),
+        bullets: facts('Genre: Gospel / Country', 'Cover'),
       },
       {
         artist: 'Gabby Barrett',
@@ -267,7 +277,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Holiday / Country',
         date: 'Oct 24, 2025',
-        bullets: facts('Holiday / Country'),
+        bullets: facts('Genre: Holiday / Country'),
       },
       {
         artist: 'NLE Choppa',
@@ -275,7 +285,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Hip Hop / Holiday',
         date: 'Dec 6, 2024',
-        bullets: facts('Hip Hop / Holiday'),
+        bullets: facts('Genre: Hip Hop / Holiday'),
       },
       {
         artist: 'Alex Crichton',
@@ -283,7 +293,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Indie',
         date: 'Dec 5, 2024',
-        bullets: facts('Indie'),
+        bullets: facts('Genre: Indie'),
       },
       {
         artist: 'Saweetie',
@@ -291,7 +301,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Hip Hop / Holiday',
         date: 'Nov 1, 2024',
-        bullets: facts('Hip Hop / Holiday'),
+        bullets: facts('Genre: Hip Hop / Holiday'),
       },
       {
         artist: 'Griff',
@@ -299,7 +309,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Pop',
         date: 'Nov 1, 2024',
-        bullets: facts('Pop'),
+        bullets: facts('Genre: Pop'),
       },
       {
         artist: 'Brandy Clark',
@@ -307,7 +317,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Country / Americana',
         date: 'Oct 27, 2023',
-        bullets: facts('Country / Americana'),
+        bullets: facts('Genre: Country / Americana'),
       },
       {
         artist: 'Brandy Clark',
@@ -315,7 +325,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Holiday',
         date: 'Oct 27, 2023',
-        bullets: facts('Holiday'),
+        bullets: facts('Genre: Holiday'),
       },
       {
         artist: 'Cher',
@@ -324,7 +334,7 @@ export const pastReleases = [
         genre: 'Pop / Dance-pop / Holiday',
         date: 'Oct 20, 2023',
         focus: '“DJ Play A Christmas Song”',
-        bullets: facts('Pop / Dance-pop / Holiday', '“DJ Play A Christmas Song”'),
+        bullets: facts('Genre: Pop / Dance-pop / Holiday', 'Focus: “DJ Play A Christmas Song”'),
       },
       {
         artist: 'Dolly Parton',
@@ -333,7 +343,7 @@ export const pastReleases = [
         genre: 'Country / Holiday',
         date: 'Oct 14, 2022',
         focus: '“Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)”',
-        bullets: facts('Country / Holiday', '“Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)”'),
+        bullets: facts('Genre: Country / Holiday', 'Focus: “Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)”'),
       },
       {
         artist: 'Cody Johnson',
@@ -341,7 +351,7 @@ export const pastReleases = [
         format: 'Album',
         genre: 'Country / Holiday',
         date: 'Nov 21, 2021',
-        bullets: facts('Country / Holiday'),
+        bullets: facts('Genre: Country / Holiday'),
       },
       {
         artist: 'Michael Bublé',
@@ -350,7 +360,7 @@ export const pastReleases = [
         genre: 'Pop / Holiday',
         date: 'Nov 12, 2021',
         focus: '“It’s Beginning To Look a Lot Like Christmas”',
-        bullets: facts('Pop / Holiday', '“It’s Beginning To Look a Lot Like Christmas”'),
+        bullets: facts('Genre: Pop / Holiday', 'Focus: “It’s Beginning To Look a Lot Like Christmas”'),
       },
       {
         artist: 'Teddy Swims',
@@ -359,7 +369,7 @@ export const pastReleases = [
         genre: 'Contemporary R&B / Holiday',
         date: 'Oct 15, 2021',
         focus: '“Silent Night”',
-        bullets: facts('Contemporary R&B / Holiday', '“Silent Night”'),
+        bullets: facts('Genre: Contemporary R&B / Holiday', 'Focus: “Silent Night”'),
       },
       {
         artist: 'Patrick Droney',
@@ -367,7 +377,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Soul / Pop',
         date: 'Nov 18, 2020',
-        bullets: facts('Soul / Pop'),
+        bullets: facts('Genre: Soul / Pop'),
       },
       {
         artist: 'The Goo Goo Dolls',
@@ -376,7 +386,7 @@ export const pastReleases = [
         genre: 'Holiday / Pop-Rock',
         date: 'Oct 30, 2020',
         focus: '“Christmas All Over Again”',
-        bullets: facts('Holiday / Pop-Rock', '“Christmas All Over Again”'),
+        bullets: facts('Genre: Holiday / Pop-Rock', 'Focus: “Christmas All Over Again”'),
       },
       {
         artist: 'Green Day',
@@ -384,7 +394,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Holiday / Pop-Rock',
         date: 'Dec 24, 2015',
-        bullets: facts('Holiday / Pop-Rock'),
+        bullets: facts('Genre: Holiday / Pop-Rock'),
       },
       {
         artist: 'Faith Hill',
@@ -393,7 +403,7 @@ export const pastReleases = [
         genre: 'Holiday / Country',
         date: 'Sep 30, 2008',
         focus: '“O Come, All Ye Faithful”',
-        bullets: facts('Holiday / Country', '“O Come, All Ye Faithful”'),
+        bullets: facts('Genre: Holiday / Country', 'Focus: “O Come, All Ye Faithful”'),
       },
       {
         artist: 'Josh Groban',
@@ -402,7 +412,7 @@ export const pastReleases = [
         genre: 'Holiday',
         date: 'Oct 9, 2007',
         focus: '“Believe”',
-        bullets: facts('Holiday', '“Believe”'),
+        bullets: facts('Genre: Holiday', 'Focus: “Believe”'),
       },
       {
         artist: 'My Chemical Romance',
@@ -410,7 +420,7 @@ export const pastReleases = [
         format: 'Single',
         genre: 'Alternative',
         date: 'Nov 23, 2004',
-        bullets: facts('Alternative'),
+        bullets: facts('Genre: Alternative'),
       },
     ],
   },

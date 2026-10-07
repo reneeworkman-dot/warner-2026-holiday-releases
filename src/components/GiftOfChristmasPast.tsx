@@ -10,14 +10,13 @@ type PastItem = (typeof pastReleases)[number]['items'][number];
 
 const isRealDate = (label?: string) => /\b(19|20)\d{2}\b/.test(label || '') || label === 'TBD';
 
-export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack }) => {
+export const GiftOfChristmasPast: React.FC<Props> = () => {
   const items = pastReleases.flatMap((group) => group.items);
   const midpoint = Math.ceil(items.length / 2);
   const left = items.slice(0, midpoint);
   const right = items.slice(midpoint);
 
-  const renderItem = (item: PastItem, trackKey: string) => {
-    const isPlaying = playingTrack === trackKey;
+  const renderItem = (item: PastItem) => {
     const showDate = isRealDate(item.date);
 
     return (
@@ -45,13 +44,6 @@ export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack
             </li>
           ))}
         </ul>
-        <button
-          type="button"
-          onClick={() => onPlayChime(trackKey, item.title, item.artist)}
-          className="mt-2 font-handwriting text-lg text-amber-100 hover:text-white cursor-pointer"
-        >
-          {isPlaying ? 'stop the bells' : 'listen'}
-        </button>
       </li>
     );
   };
@@ -67,10 +59,10 @@ export const GiftOfChristmasPast: React.FC<Props> = ({ onPlayChime, playingTrack
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-10">
         <ul>
-          {left.map((item, idx) => renderItem(item, `past-left-${idx}`))}
+          {left.map((item) => renderItem(item))}
         </ul>
         <ul>
-          {right.map((item, idx) => renderItem(item, `past-right-${idx}`))}
+          {right.map((item) => renderItem(item))}
         </ul>
       </div>
     </section>
