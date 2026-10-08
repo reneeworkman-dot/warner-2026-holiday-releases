@@ -27,7 +27,7 @@ export const newReleases: Release[] = [
   {
     id: 'anna-rae-shouldnt',
     artist: 'Anna Rae',
-    title: "Shouldn't It Be Christmas",
+    title: '“Shouldn’t It Be Christmas”',
     format: 'Single',
     genre: 'Holiday / Country',
     date: 'Oct 30, 2026',
@@ -38,7 +38,7 @@ export const newReleases: Release[] = [
     id: 'ingrid-andress',
     artist: 'Ingrid Andress',
     coverImage: 'covers/ingrid-andress.jpg',
-    title: 'Snowed In With Me',
+    title: '“Snowed In With Me”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Oct 30, 2026',
@@ -48,7 +48,7 @@ export const newReleases: Release[] = [
   {
     id: 'highway-home',
     artist: 'Highway Home',
-    title: 'Highway Home For Christmas: Please Come Home For Christmas / O Holy Night',
+    title: 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”',
     format: '2 Pack Single',
     genre: 'Country',
     date: 'Nov 6, 2026',
@@ -58,7 +58,7 @@ export const newReleases: Release[] = [
   {
     id: 'adore-2026',
     artist: 'adore',
-    title: 'I’ll Hold On For Christmas',
+    title: '“I’ll Hold On For Christmas”',
     format: 'Single',
     genre: 'Pop / Alternative',
     date: 'Nov 6, 2026',
@@ -68,7 +68,7 @@ export const newReleases: Release[] = [
   {
     id: 'dan-shay-beginning',
     artist: 'Dan + Shay',
-    title: "It's Beginning To Look A Lot Like Christmas",
+    title: '“It’s Beginning To Look A Lot Like Christmas”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Nov 6, 2026',
@@ -78,7 +78,7 @@ export const newReleases: Release[] = [
   {
     id: 'morgan-wade-list',
     artist: 'Morgan Wade',
-    title: 'Christmas List',
+    title: '“Christmas List”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Nov 6, 2026',
@@ -88,7 +88,7 @@ export const newReleases: Release[] = [
   {
     id: 'anna-rae-eve',
     artist: 'Anna Rae',
-    title: 'Christmas Eve',
+    title: '“Christmas Eve”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Nov 13, 2026',
@@ -98,7 +98,7 @@ export const newReleases: Release[] = [
   {
     id: 'jenna-raine',
     artist: 'Jenna Raine',
-    title: 'Frosty / A Baby Was Born',
+    title: '“Frosty / A Baby Was Born”',
     format: '2 Pack Single',
     genre: 'Pop',
     date: 'Nov 13, 2026',
@@ -118,7 +118,7 @@ export const newReleases: Release[] = [
   {
     id: 'tyler-braden',
     artist: 'Tyler Braden',
-    title: 'A Lot Like Christmas',
+    title: '“A Lot Like Christmas”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Nov 13, 2026',
@@ -128,7 +128,7 @@ export const newReleases: Release[] = [
   {
     id: 'colton-dawson',
     artist: 'Colton Dawson',
-    title: "I'll Be Home For Christmas",
+    title: '“I’ll Be Home For Christmas”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Nov 24, 2026',
@@ -138,7 +138,7 @@ export const newReleases: Release[] = [
   {
     id: 'slater-nalley',
     artist: 'Slater Nalley',
-    title: 'January (w/The Castellows)',
+    title: '“January (w/The Castellows)”',
     format: 'Single',
     genre: 'Holiday',
     date: 'Dec 11, 2026',
