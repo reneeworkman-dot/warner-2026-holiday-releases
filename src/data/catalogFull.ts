@@ -257,6 +257,7 @@ export const pastReleases = [
       {
         artist: 'Dan + Shay',
         title: '“Officially Christmas”',
+        coverImage: 'covers/dan-shay-officially-christmas.jpg',
         format: 'Single',
         genre: 'Holiday',
         bullets: facts('Genre: Holiday'),
@@ -264,6 +265,7 @@ export const pastReleases = [
       {
         artist: 'Warren Zeiders',
         title: '“How Great Thou Art”',
+        coverImage: 'covers/warren-zeiders.jpg',
         format: 'Single',
         genre: 'Gospel / Country',
         date: 'Oct 31, 2025',
@@ -272,6 +274,7 @@ export const pastReleases = [
       {
         artist: 'Gabby Barrett',
         title: '“Where Are You Christmas”',
+        coverImage: 'covers/gabby-barrett-where.jpg',
         format: 'Single',
         genre: 'Holiday / Country',
         date: 'Oct 24, 2025',
@@ -280,6 +283,7 @@ export const pastReleases = [
       {
         artist: 'NLE Choppa',
         title: 'What A Christmas',
+        coverImage: 'covers/nle-choppa.jpg',
         format: 'Single',
         genre: 'Hip Hop / Holiday',
         date: 'Dec 6, 2024',
