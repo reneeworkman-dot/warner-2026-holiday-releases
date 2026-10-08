@@ -15,6 +15,9 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
   onUploadImage,
 }) => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const photo =
+    customImage ||
+    (release.coverImage ? `${import.meta.env.BASE_URL}${release.coverImage}` : null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -30,8 +33,8 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
         className="relative block w-full aspect-square overflow-hidden cursor-pointer bg-black/25"
         title="Add a photo"
       >
-        {customImage ? (
-          <img src={customImage} alt="" className="w-full h-full object-cover" />
+        {photo ? (
+          <img src={photo} alt={`${release.artist} — ${release.title}`} className="w-full h-full object-cover" />
         ) : (
           <span className="absolute inset-0 flex items-center justify-center text-center px-2 font-handwriting text-lg leading-tight text-amber-100/90">
             add a photo

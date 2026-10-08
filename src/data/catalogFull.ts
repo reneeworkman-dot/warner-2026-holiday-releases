@@ -18,6 +18,7 @@ export const newReleases: Release[] = [
   {
     id: 'ryan-peter-murphy',
     artist: 'Ryan Peter Murphy',
+    coverImage: 'covers/ryan-peter-murphy.jpg',
     title: 'Christmas in New England',
     genre: 'Holiday',
     label: 'WR',
@@ -36,6 +37,7 @@ export const newReleases: Release[] = [
   {
     id: 'ingrid-andress',
     artist: 'Ingrid Andress',
+    coverImage: 'covers/ingrid-andress.jpg',
     title: 'Snowed In With Me',
     format: 'Single',
     genre: 'Holiday',
@@ -172,6 +174,7 @@ export const dollyMemorial = {
   genre: 'Country / Holiday',
   date: 'Oct 14, 2022',
   focusTrack: 'Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)',
+  coverImage: 'covers/dolly-parton.jpg',
   tributeQuote: '“If you see someone without a smile, give ’em one of yours.”',
 };
 
@@ -182,6 +185,7 @@ export const pastReleases = [
       {
         artist: 'Morgan Wade',
         title: 'Christmas in My Dreams',
+        coverImage: 'covers/morgan-wade.jpg',
         format: 'EP',
         genre: 'Holiday / Country',
         date: 'Nov 26, 2025',
@@ -190,6 +194,7 @@ export const pastReleases = [
       {
         artist: 'Alex Isley',
         title: '“Christmas Song”',
+        coverImage: 'covers/alex-isley.jpg',
         format: 'Single',
         genre: 'R&B / Holiday',
         date: 'Nov 14, 2025',
@@ -198,6 +203,7 @@ export const pastReleases = [
       {
         artist: 'Maddox Batson',
         title: '“Home for the Holidays”',
+        coverImage: 'covers/maddox-batson.jpg',
         format: '2 Track Bundle',
         genre: 'Country / Holiday',
         date: 'Nov 13, 2025',
@@ -206,6 +212,7 @@ export const pastReleases = [
       {
         artist: 'Dasha',
         title: '“Driving Home For Christmas”',
+        coverImage: 'covers/dasha.jpg',
         format: 'Single',
         genre: 'Country / Holiday',
         date: 'Nov 7, 2025',
@@ -214,6 +221,7 @@ export const pastReleases = [
       {
         artist: 'Honey Bxby',
         title: '“All I Want”',
+        coverImage: 'covers/honey-bxby.jpg',
         format: 'Single',
         genre: 'R&B',
         date: 'Nov 7, 2025',
@@ -222,6 +230,7 @@ export const pastReleases = [
       {
         artist: 'Suubi',
         title: '“Last Christmas”',
+        coverImage: 'covers/suubi.jpg',
         format: 'Single',
         genre: 'Holiday',
         date: 'TBD',
@@ -230,6 +239,7 @@ export const pastReleases = [
       {
         artist: 'Gabby Barrett',
         title: 'Carols and Candlelight (Deluxe)',
+        coverImage: 'covers/gabby-barrett.jpg',
         format: 'Album',
         genre: 'Holiday / Country',
         date: 'Nov 7, 2025',
@@ -286,6 +296,7 @@ export const pastReleases = [
       {
         artist: 'Saweetie',
         title: '“Dear Big Santa”',
+        coverImage: 'covers/saweetie.jpg',
         format: '2 Pack Single',
         genre: 'Hip Hop / Holiday',
         date: 'Nov 1, 2024',
@@ -294,6 +305,7 @@ export const pastReleases = [
       {
         artist: 'Griff',
         title: '“Pure Imagination”',
+        coverImage: 'covers/griff.jpg',
         format: 'Single',
         genre: 'Pop',
         date: 'Nov 1, 2024',
@@ -302,6 +314,7 @@ export const pastReleases = [
       {
         artist: 'Brandy Clark',
         title: '“My Favorite Christmas”',
+        coverImage: 'covers/brandy-clark.jpg',
         format: '2 Pack Single',
         genre: 'Country / Americana',
         date: 'Oct 27, 2023',
@@ -310,6 +323,7 @@ export const pastReleases = [
       {
         artist: 'Cher',
         title: 'Christmas',
+        coverImage: 'covers/cher.jpg',
         format: 'Album',
         genre: 'Pop / Dance-pop / Holiday',
         date: 'Oct 20, 2023',
@@ -319,6 +333,7 @@ export const pastReleases = [
       {
         artist: 'Dolly Parton',
         title: 'A Holly Dolly Christmas (Ultimate Deluxe Edition)',
+        coverImage: 'covers/dolly-parton.jpg',
         format: 'Album',
         genre: 'Country / Holiday',
         date: 'Oct 14, 2022',
@@ -328,6 +343,7 @@ export const pastReleases = [
       {
         artist: 'Cody Johnson',
         title: 'A Cody Johnson Christmas',
+        coverImage: 'covers/cody-johnson.jpg',
         format: 'Album',
         genre: 'Country / Holiday',
         date: 'Nov 21, 2021',
@@ -336,6 +352,7 @@ export const pastReleases = [
       {
         artist: 'Michael Bublé',
         title: 'Christmas (Deluxe 10th Anniversary Edition)',
+        coverImage: 'covers/michael-buble.jpg',
         format: 'Album',
         genre: 'Pop / Holiday',
         date: 'Nov 12, 2021',
@@ -345,6 +362,7 @@ export const pastReleases = [
       {
         artist: 'Teddy Swims',
         title: 'A Very Teddy Christmas',
+        coverImage: 'covers/teddy-swims.jpg',
         format: 'EP',
         genre: 'Contemporary R&B / Holiday',
         date: 'Oct 15, 2021',
@@ -354,6 +372,7 @@ export const pastReleases = [
       {
         artist: 'Patrick Droney',
         title: '“All I Want for Christmas Is You”',
+        coverImage: 'covers/patrick-droney.jpg',
         format: 'Single',
         genre: 'Soul / Pop',
         date: 'Nov 18, 2020',
@@ -362,6 +381,7 @@ export const pastReleases = [
       {
         artist: 'The Goo Goo Dolls',
         title: 'It’s Christmas All Over',
+        coverImage: 'covers/goo-goo-dolls.jpg',
         format: 'Album',
         genre: 'Holiday / Pop-Rock',
         date: 'Oct 30, 2020',
@@ -371,6 +391,7 @@ export const pastReleases = [
       {
         artist: 'Green Day',
         title: '“Xmas Time of the Year”',
+        coverImage: 'covers/green-day.jpg',
         format: 'Single',
         genre: 'Holiday / Pop-Rock',
         date: 'Dec 24, 2015',
@@ -379,6 +400,7 @@ export const pastReleases = [
       {
         artist: 'Faith Hill',
         title: 'Joy To The World',
+        coverImage: 'covers/faith-hill.jpg',
         format: 'Album',
         genre: 'Holiday / Country',
         date: 'Sep 30, 2008',
@@ -388,6 +410,7 @@ export const pastReleases = [
       {
         artist: 'Josh Groban',
         title: 'Noël',
+        coverImage: 'covers/josh-groban.jpg',
         format: 'Album',
         genre: 'Holiday',
         date: 'Oct 9, 2007',
@@ -397,6 +420,7 @@ export const pastReleases = [
       {
         artist: 'My Chemical Romance',
         title: '“All I Want For Christmas Is You - 2005”',
+        coverImage: 'covers/my-chemical-romance.jpg',
         format: 'Single',
         genre: 'Alternative',
         date: 'Nov 23, 2004',

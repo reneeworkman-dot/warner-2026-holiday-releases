@@ -34,6 +34,11 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
           <p className="mt-6 font-serif italic text-xl text-amber-50 leading-relaxed [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">
             {dollyMemorial.tributeQuote}
           </p>
+          <img
+            src={`${import.meta.env.BASE_URL}${dollyMemorial.coverImage}`}
+            alt="A Holly Dolly Christmas"
+            className="mx-auto mt-10 w-64 sm:w-72 aspect-square object-cover shadow-[0_12px_40px_rgba(0,0,0,0.45)]"
+          />
         </header>
 
         <section className="mt-14">

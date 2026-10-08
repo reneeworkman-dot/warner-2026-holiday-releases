@@ -17,6 +17,7 @@ export const GiftOfChristmasPast: React.FC<Props> = ({ uploadedPhotos, onUploadI
       genre: item.genre,
       date: item.date,
       bullets: item.bullets,
+      coverImage: item.coverImage,
     })),
   );
 
