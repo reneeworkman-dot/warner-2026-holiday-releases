@@ -249,6 +249,7 @@ export const pastReleases = [
       {
         artist: 'Dan + Shay',
         title: '“Long Live Christmas”',
+        coverImage: 'covers/dan-shay-long-live-christmas.jpg',
         format: 'Single',
         genre: 'Holiday',
         date: 'Nov 7, 2025',
