@@ -106,16 +106,6 @@ export const newReleases: Release[] = [
     bullets: facts('Genre: Pop'),
   },
   {
-    id: 'tyler-braden',
-    artist: 'Tyler Braden',
-    title: 'A Lot Like Christmas',
-    format: 'Single',
-    genre: 'Holiday',
-    date: 'Nov 13, 2026',
-    label: 'NASH',
-    bullets: facts('Genre: Holiday'),
-  },
-  {
     id: 'lucky-daye-2026',
     artist: 'Lucky Daye',
     title: 'TBD',
@@ -123,6 +113,16 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     date: 'Nov 23, 2026',
     label: 'WR',
+    bullets: facts('Genre: Holiday'),
+  },
+  {
+    id: 'tyler-braden',
+    artist: 'Tyler Braden',
+    title: 'A Lot Like Christmas',
+    format: 'Single',
+    genre: 'Holiday',
+    date: 'Nov 13, 2026',
+    label: 'NASH',
     bullets: facts('Genre: Holiday'),
   },
   {
@@ -138,7 +138,7 @@ export const newReleases: Release[] = [
   {
     id: 'slater-nalley',
     artist: 'Slater Nalley',
-    title: 'January (w/ The Castellows)',
+    title: 'January (w/The Castellows)',
     format: 'Single',
     genre: 'Holiday',
     date: 'Dec 11, 2026',
@@ -193,7 +193,7 @@ export const pastReleases = [
       },
       {
         artist: 'Alex Isley',
-        title: '“Christmas Song”',
+        title: '“The Christmas Song”',
         coverImage: 'covers/alex-isley.jpg',
         format: 'Single',
         genre: 'R&B / Holiday',
@@ -244,7 +244,7 @@ export const pastReleases = [
         genre: 'Holiday / Country',
         date: 'Nov 7, 2025',
         focus: '“Where Are You Christmas”',
-        bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas”', 'Single released Oct 24, 2025'),
+        bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas” (off the deluxe)', 'Single released Oct 24, 2025'),
       },
       {
         artist: 'Dan + Shay',
@@ -292,7 +292,7 @@ export const pastReleases = [
       },
       {
         artist: 'Alex Crichton',
-        title: 'Merry Christmas, I Miss You',
+        title: '“What If I Call (Merry Christmas, i miss you)”',
         coverImage: 'covers/alex-crichton.jpg',
         format: 'Single',
         genre: 'Indie',
@@ -396,7 +396,7 @@ export const pastReleases = [
       },
       {
         artist: 'Green Day',
-        title: '“Xmas Time of the Year”',
+        title: '“Xmas Time of Year”',
         coverImage: 'covers/green-day.jpg',
         format: 'Single',
         genre: 'Holiday / Pop-Rock',
@@ -425,7 +425,7 @@ export const pastReleases = [
       },
       {
         artist: 'My Chemical Romance',
-        title: '“All I Want For Christmas Is You - 2005”',
+        title: '“All I Want For Christmas is You - 2005”',
         coverImage: 'covers/my-chemical-romance.jpg',
         format: 'Single',
         genre: 'Alternative',
