@@ -293,6 +293,7 @@ export const pastReleases = [
       {
         artist: 'Alex Crichton',
         title: 'Merry Christmas, I Miss You',
+        coverImage: 'covers/alex-crichton.jpg',
         format: 'Single',
         genre: 'Indie',
         date: 'Dec 5, 2024',
