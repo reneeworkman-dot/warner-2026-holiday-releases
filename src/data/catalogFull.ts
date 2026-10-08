@@ -301,19 +301,11 @@ export const pastReleases = [
       },
       {
         artist: 'Brandy Clark',
-        title: '“My Favorite Christmas / I’ll Be Home For Christmas”',
-        format: 'Single',
+        title: '“My Favorite Christmas”',
+        format: '2 Pack Single',
         genre: 'Country / Americana',
         date: 'Oct 27, 2023',
-        bullets: facts('Genre: Country / Americana'),
-      },
-      {
-        artist: 'Brandy Clark',
-        title: '“My Favorite Christmas”',
-        format: 'Single',
-        genre: 'Holiday',
-        date: 'Oct 27, 2023',
-        bullets: facts('Genre: Holiday'),
+        bullets: facts('My Favorite Christmas / I’ll Be Home For Christmas', 'Genre: Country / Americana'),
       },
       {
         artist: 'Cher',
