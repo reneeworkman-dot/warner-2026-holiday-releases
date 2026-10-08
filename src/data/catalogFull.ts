@@ -285,11 +285,11 @@ export const pastReleases = [
       },
       {
         artist: 'Saweetie',
-        title: '“Big Santa / I Want You This Christmas”',
-        format: 'Single',
+        title: '“Dear Big Santa”',
+        format: '2 Pack Single',
         genre: 'Hip Hop / Holiday',
         date: 'Nov 1, 2024',
-        bullets: facts('Genre: Hip Hop / Holiday'),
+        bullets: facts('Big Santa / I Want You This Christmas', 'Genre: Hip Hop / Holiday'),
       },
       {
         artist: 'Griff',
