@@ -165,6 +165,26 @@ export const newReleases: Release[] = [
     label: 'WR',
     bullets: facts('Genre: Holiday'),
   },
+  {
+    id: 'the-neighbourhood',
+    artist: 'The Neighbourhood',
+    title: '“Why’d You Have To Leave”',
+    format: 'Single',
+    genre: 'Alternative',
+    date: 'Nov 6, 2026',
+    label: 'WR',
+    bullets: facts('Genre: Alternative'),
+  },
+  {
+    id: 'dasha-something-to-believe-in',
+    artist: 'Dasha',
+    title: '“Something To Believe In”',
+    format: 'Single',
+    genre: 'Holiday / Country',
+    date: 'Nov 6, 2026',
+    label: 'WR',
+    bullets: facts('Genre: Holiday / Country'),
+  },
 ];
 
 export const dollyMemorial = {
