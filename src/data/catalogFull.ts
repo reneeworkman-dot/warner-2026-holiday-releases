@@ -92,6 +92,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'anna-rae-eve',
+    coverImage: 'covers/anna-rae-eve.jpg',
     artist: 'Anna Rae',
     title: '“Christmas Eve”',
     format: 'Single',
