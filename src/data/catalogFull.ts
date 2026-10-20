@@ -157,22 +157,13 @@ export const newReleases: Release[] = [
   },
   {
     id: 'hailey-hutcheson',
+    coverImage: 'covers/hailey-hutcheson.jpg',
     artist: 'Hailey Hutcheson',
     title: 'TBD',
     format: 'Single',
     genre: 'Holiday',
     date: 'TBD',
     label: 'NASH',
-    bullets: facts('Genre: Holiday'),
-  },
-  {
-    id: 'goo-goo-dolls-tbd',
-    artist: 'Goo Goo Dolls',
-    title: 'TBD',
-    format: 'Single',
-    genre: 'Holiday',
-    date: 'TBD',
-    label: 'WR',
     bullets: facts('Genre: Holiday'),
   },
   {
