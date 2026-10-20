@@ -26,6 +26,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'anna-rae-shouldnt',
+    coverImage: 'covers/anna-rae-shouldnt.jpg',
     artist: 'Anna Rae',
     title: '“Shouldn’t It Be Christmas”',
     format: 'Single',
@@ -47,6 +48,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'highway-home',
+    coverImage: 'covers/highway-home.jpg',
     artist: 'Highway Home',
     title: 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”',
     format: '2 Pack Single',
@@ -57,6 +59,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'adore-2026',
+    coverImage: 'covers/adore.jpg',
     artist: 'adore',
     title: '“I’ll Hold On For Christmas”',
     format: 'Single',
@@ -67,6 +70,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'dan-shay-beginning',
+    coverImage: 'covers/dan-shay-beginning.jpg',
     artist: 'Dan + Shay',
     title: '“It’s Beginning To Look A Lot Like Christmas”',
     format: 'Single',
@@ -77,6 +81,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'morgan-wade-list',
+    coverImage: 'covers/morgan-wade-list.jpg',
     artist: 'Morgan Wade',
     title: '“Christmas List”',
     format: 'Single',
@@ -97,6 +102,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'jenna-raine',
+    coverImage: 'covers/jenna-raine.jpg',
     artist: 'Jenna Raine',
     title: '“Frosty / A Baby Was Born”',
     format: '2 Pack Single',
@@ -107,6 +113,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'lucky-daye-2026',
+    coverImage: 'covers/lucky-daye.jpg',
     artist: 'Lucky Daye',
     title: 'TBD',
     format: 'EP',
@@ -117,6 +124,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'tyler-braden',
+    coverImage: 'covers/tyler-braden.jpg',
     artist: 'Tyler Braden',
     title: '“A Lot Like Christmas”',
     format: 'Single',
@@ -138,6 +146,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'slater-nalley',
+    coverImage: 'covers/slater-nalley.jpg',
     artist: 'Slater Nalley',
     title: '“January (w/The Castellows)”',
     format: 'Single',
@@ -168,6 +177,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'the-neighbourhood',
+    coverImage: 'covers/the-neighbourhood.jpg',
     artist: 'The Neighbourhood',
     title: '“Why’d You Have To Leave”',
     format: 'Single',
@@ -178,6 +188,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'dasha-something-to-believe-in',
+    coverImage: 'covers/dasha-something.jpg',
     artist: 'Dasha',
     title: '“Something To Believe In”',
     format: 'Single',
