@@ -208,6 +208,20 @@ export const dollyMemorial = {
   focusTrack: 'Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)',
   coverImage: 'covers/dolly-parton.jpg',
   tributeQuote: '“If you see someone without a smile, give ’em one of yours.”',
+  musicAccomplishments: [
+    'Wrote “Jolene,” “I Will Always Love You,” “Coat of Many Colors,” and “9 to 5.”',
+    '“I Will Always Love You” became a standard, carried around the world by Whitney Houston.',
+    'Starred in the film 9 to 5, then wrote the score for the Broadway musical.',
+    'More than 100 million records, and dozens of No. 1 country songs.',
+    'Country Music Hall of Fame, Rock & Roll Hall of Fame, and the Songwriters Hall of Fame.',
+    'Kennedy Center Honors, the National Medal of Arts, and a Grammy Lifetime Achievement Award.',
+    'Sang with Emmylou Harris and Linda Ronstadt on the Trio records.',
+  ],
+  otherAccomplishments: [
+    'Opened Dollywood in the Smoky Mountains, close to the home where she grew up.',
+    'Her Imagination Library has mailed hundreds of millions of free books to children.',
+    'Through the Dollywood Foundation, she has backed scholarships and her home county in East Tennessee.',
+  ],
 };
 
 export const pastReleases = [

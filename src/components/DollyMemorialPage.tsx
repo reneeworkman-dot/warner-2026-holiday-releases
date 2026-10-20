@@ -60,6 +60,34 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
           </ul>
         </section>
 
+        <section className="mt-14">
+          <h2 className="font-handwriting text-4xl text-amber-100 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
+            In her music
+          </h2>
+          <ul className="mt-4 space-y-2">
+            {dollyMemorial.musicAccomplishments.map((item) => (
+              <li key={item} className="flex gap-2 text-sm text-amber-50/95 leading-snug [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
+                <span className="text-amber-200 shrink-0">❄</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="font-handwriting text-4xl text-amber-100 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
+            And beyond it
+          </h2>
+          <ul className="mt-4 space-y-2">
+            {dollyMemorial.otherAccomplishments.map((item) => (
+              <li key={item} className="flex gap-2 text-sm text-amber-50/95 leading-snug [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
+                <span className="text-amber-200 shrink-0">❄</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <div className="mt-16 pb-4 flex justify-center">
           <WarnerLogo />
         </div>
