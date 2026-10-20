@@ -128,6 +128,7 @@ export const newReleases: Release[] = [
   {
     id: 'colton-dawson',
     artist: 'Colton Dawson',
+    coverImage: 'covers/colton-dawson.jpg',
     title: '“I’ll Be Home For Christmas”',
     format: 'Single',
     genre: 'Holiday',
