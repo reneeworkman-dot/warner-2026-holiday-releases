@@ -115,7 +115,7 @@ export const newReleases: Release[] = [
     id: 'lucky-daye-2026',
     coverImage: 'covers/lucky-daye.jpg',
     artist: 'Lucky Daye',
-    title: 'TBD',
+    title: 'Present For You',
     format: 'EP',
     genre: 'Holiday',
     date: 'Nov 23, 2026',
