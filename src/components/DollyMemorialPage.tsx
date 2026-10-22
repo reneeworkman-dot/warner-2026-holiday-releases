@@ -60,32 +60,6 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
           </ul>
         </section>
 
-        <section className="mt-14">
-          <h2 className="font-handwriting text-4xl text-amber-100 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
-            The songs she gave us
-          </h2>
-          <div className="mt-4 space-y-4">
-            {dollyMemorial.musicTribute.map((item) => (
-              <p key={item} className="text-sm text-amber-50/95 leading-relaxed [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
-                {item}
-              </p>
-            ))}
-          </div>
-        </section>
-
-        <section className="mt-10">
-          <h2 className="font-handwriting text-4xl text-amber-100 [text-shadow:0_2px_10px_rgba(0,0,0,0.8)]">
-            The way she looks after people
-          </h2>
-          <div className="mt-4 space-y-4">
-            {dollyMemorial.beyondTribute.map((item) => (
-              <p key={item} className="text-sm text-amber-50/95 leading-relaxed [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
-                {item}
-              </p>
-            ))}
-          </div>
-        </section>
-
         <div className="mt-16 pb-4 flex justify-center">
           <WarnerLogo />
         </div>

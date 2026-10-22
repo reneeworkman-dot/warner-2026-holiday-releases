@@ -200,14 +200,6 @@ export const dollyMemorial = {
   focusTrack: 'Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)',
   coverImage: 'covers/dolly-parton.jpg',
   tributeQuote: '“If you see someone without a smile, give ’em one of yours.”',
-  musicTribute: [
-    'Dolly writes like someone who has already decided to love you. “Jolene,” “Coat of Many Colors,” “9 to 5,” and “I Will Always Love You” came from her, and she sent them into the world instead of keeping them close. When Whitney Houston carried “I Will Always Love You” everywhere, Dolly was proud of her. She starred in 9 to 5, then wrote the score when that story reached Broadway, and she sang beside Emmylou Harris and Linda Ronstadt on the Trio records, three friends making room for one another.',
-    'The Country Music Hall of Fame, the Rock & Roll Hall of Fame, and the Songwriters Hall of Fame have all welcomed her. So have the Kennedy Center Honors, the National Medal of Arts, and a Grammy Lifetime Achievement Award. More than 100 million records, and dozens of No. 1 country songs, and she still sounds like the girl who just wanted the song to be true.',
-  ],
-  beyondTribute: [
-    'Near the mountains where she grew up, she built Dollywood so people would have a place to be happy together. Her Imagination Library has put hundreds of millions of free books into children’s hands, one mailbox at a time. Through the Dollywood Foundation she has stood behind scholarships and her home county in East Tennessee.',
-    'She treats a good life the way she treats a good song. If it blesses her, she wants it to bless somebody else.',
-  ],
 };
 
 export const pastReleases = [
