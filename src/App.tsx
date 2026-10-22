@@ -78,6 +78,10 @@ export const App: React.FC = () => {
         </header>
 
         <GiftOfChristmasPast
+          title="Endless Holiday Cheer"
+          subtitle="Everything Already Out in the World"
+          start={0}
+          count={12}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
         />
@@ -108,6 +112,13 @@ export const App: React.FC = () => {
             ))}
           </div>
         </section>
+
+        <GiftOfChristmasPast
+          title="And More"
+          start={12}
+          uploadedPhotos={uploadedPhotos}
+          onUploadImage={handleUploadImage}
+        />
 
         <footer className="mt-16 pb-8 flex justify-center">
           <WarnerLogo />
