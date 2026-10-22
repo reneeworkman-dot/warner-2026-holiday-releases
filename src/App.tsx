@@ -75,23 +75,12 @@ export const App: React.FC = () => {
           <h1 className="display font-black uppercase text-4xl sm:text-6xl text-white leading-tight tracking-wide [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
             Warner Records 2026 Holiday Releases
           </h1>
-          <h2 className="font-handwriting text-4xl sm:text-5xl text-amber-100 mt-1 [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
-            Holiday Hits
-          </h2>
         </header>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8">
-          {newReleases.map((release) => (
-            <ReleaseCardWithUpload
-              key={release.id}
-              release={release}
-              customImage={uploadedPhotos[release.id] || null}
-              onUploadImage={handleUploadImage}
-              onPlayChime={handlePlayChime}
-              isPlaying={playingTrack === release.id}
-            />
-          ))}
-        </section>
+        <GiftOfChristmasPast
+          uploadedPhotos={uploadedPhotos}
+          onUploadImage={handleUploadImage}
+        />
 
         <div className="flex justify-center">
           <DollyOrnament
@@ -102,10 +91,23 @@ export const App: React.FC = () => {
           />
         </div>
 
-        <GiftOfChristmasPast
-          uploadedPhotos={uploadedPhotos}
-          onUploadImage={handleUploadImage}
-        />
+        <section className="mt-4">
+          <h2 className="font-handwriting text-4xl sm:text-5xl text-amber-100 text-center [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
+            Coming This Season
+          </h2>
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8">
+            {newReleases.map((release) => (
+              <ReleaseCardWithUpload
+                key={release.id}
+                release={release}
+                customImage={uploadedPhotos[release.id] || null}
+                onUploadImage={handleUploadImage}
+                onPlayChime={handlePlayChime}
+                isPlaying={playingTrack === release.id}
+              />
+            ))}
+          </div>
+        </section>
 
         <footer className="mt-16 pb-8 flex justify-center">
           <WarnerLogo />
