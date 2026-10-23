@@ -226,6 +226,16 @@ export const addedReleases: Release[] = [
     label: 'JOA/NASH',
     bullets: facts('Genre: Holiday / Country'),
   },
+  {
+    id: 'the-creekers',
+    artist: 'The Creekers',
+    title: '“Mary, Did You Know?” (w/ The Band Loula) / “Christmas Time’s a Comin’”',
+    format: '2 Pack Single',
+    genre: 'Holiday',
+    date: 'Dec 4, 2026',
+    label: 'NASH',
+    bullets: facts('Genre: Holiday'),
+  },
 ];
 
 export const dollyMemorial = {
@@ -483,7 +493,8 @@ export const pastReleases = [
         format: 'Album',
         genre: 'Country / Holiday',
         date: 'Nov 21, 2021',
-        bullets: facts('Genre: Country / Holiday'),
+        focus: '“Hat Made Of Mistletoe”',
+        bullets: facts('Genre: Country / Holiday', 'Focus: “Hat Made Of Mistletoe”'),
       },
     ],
   },

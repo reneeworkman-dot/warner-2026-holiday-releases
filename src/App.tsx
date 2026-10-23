@@ -19,6 +19,7 @@ const comingKeys: Array<[string, string]> = [
   ['Slater Nalley', '“January (w/The Castellows)”'],
   ['adore', '“I’ll Hold On For Christmas”'],
   ['Jenna Raine', '“Frosty / A Baby Was Born”'],
+  ['Dan + Shay', '“It’s Beginning To Look A Lot Like Christmas”'],
 ];
 
 const cheerKeys: Array<[string, string]> = [
