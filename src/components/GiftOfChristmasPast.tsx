@@ -7,32 +7,34 @@ interface Props {
   onUploadImage: (id: string, file: File) => void;
   title: string;
   subtitle?: string;
-  start?: number;
-  count?: number;
+  items: Release[];
+  onPlayChime?: (id: string, title: string, artist: string) => void;
+  playingId?: string | null;
 }
+
+export const catalogueReleases = (): Release[] =>
+  pastReleases.flatMap((group) =>
+    group.items.map((item) => ({
+      id: `past-${item.artist}-${item.title}`.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      artist: item.artist,
+      title: item.title,
+      format: item.format,
+      genre: item.genre,
+      date: item.date,
+      bullets: item.bullets,
+      coverImage: item.coverImage,
+    })),
+  );
 
 export const GiftOfChristmasPast: React.FC<Props> = ({
   uploadedPhotos,
   onUploadImage,
   title,
   subtitle,
-  start = 0,
-  count,
+  items,
+  onPlayChime,
+  playingId,
 }) => {
-  const items: Release[] = pastReleases
-    .flatMap((group) =>
-      group.items.map((item) => ({
-        id: `past-${item.artist}-${item.title}`.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-        artist: item.artist,
-        title: item.title,
-        format: item.format,
-        genre: item.genre,
-        date: item.date,
-        bullets: item.bullets,
-        coverImage: item.coverImage,
-      })),
-    )
-    .slice(start, count === undefined ? undefined : start + count);
 
   return (
     <section className="w-full mt-6 pt-4">
@@ -52,8 +54,8 @@ export const GiftOfChristmasPast: React.FC<Props> = ({
             release={release}
             customImage={uploadedPhotos[release.id] || null}
             onUploadImage={onUploadImage}
-            onPlayChime={() => undefined}
-            isPlaying={false}
+            onPlayChime={onPlayChime ?? (() => undefined)}
+            isPlaying={playingId === release.id}
           />
         ))}
       </div>

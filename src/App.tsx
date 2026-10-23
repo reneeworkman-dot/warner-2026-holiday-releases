@@ -3,10 +3,46 @@ import { SimpleSnow } from './components/SimpleSnow';
 import { WarnerLogo } from './components/WarnerLogo';
 import { DollyOrnament } from './components/DollyOrnament';
 import { DollyMemorialPage } from './components/DollyMemorialPage';
-import { ReleaseCardWithUpload } from './components/ReleaseCardWithUpload';
-import { GiftOfChristmasPast } from './components/GiftOfChristmasPast';
-import { newReleases } from './data/catalogFull';
+import { GiftOfChristmasPast, catalogueReleases } from './components/GiftOfChristmasPast';
+import { newReleases, Release } from './data/catalogFull';
 import { audioEngine } from './audio/audioEngine';
+
+const releaseKey = (release: Release) => `${release.artist}\0${release.title}`;
+
+const featuredKeys: Array<[string, string]> = [
+  ['Ryan Peter Murphy', 'Christmas in New England'],
+  ['Dan + Shay', '“Officially Christmas”'],
+  ['The Neighbourhood', '“Why’d You Have To Leave”'],
+  ['Dasha', '“Driving Home For Christmas”'],
+  ['Lucky Daye', 'Present For You'],
+  ['Alex Isley', '“The Christmas Song”'],
+  ['Maddox Batson', '“Home for the Holidays”'],
+  ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
+  ['Alex Crichton', '“What If I Call (Merry Christmas, i miss you)”'],
+  ['Brandy Clark', '“My Favorite Christmas”'],
+  ['Cher', 'Christmas'],
+  ['Dolly Parton', 'A Holly Dolly Christmas (Ultimate Deluxe Edition)'],
+  ['Cody Johnson', 'A Cody Johnson Christmas'],
+  ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
+  ['Teddy Swims', 'A Very Teddy Christmas'],
+  ['Patrick Droney', '“All I Want for Christmas Is You”'],
+  ['The Goo Goo Dolls', 'It’s Christmas All Over'],
+  ['Faith Hill', 'Joy To The World'],
+  ['Josh Groban', 'Noël'],
+];
+
+const catalogue = catalogueReleases();
+const previousOrder = [...catalogue.slice(0, 12), ...newReleases, ...catalogue.slice(12)];
+const byKey = new Map(previousOrder.map((release) => [releaseKey(release), release]));
+const featuredReleases = featuredKeys.map(([artist, title]) => {
+  const release = byKey.get(`${artist}\0${title}`);
+  if (!release) {
+    throw new Error(`Missing release: ${artist} — ${title}`);
+  }
+  return release;
+});
+const featuredSet = new Set(featuredReleases.map(releaseKey));
+const remainingReleases = previousOrder.filter((release) => !featuredSet.has(releaseKey(release)));
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'main' | 'dolly'>('main');
@@ -79,11 +115,11 @@ export const App: React.FC = () => {
 
         <GiftOfChristmasPast
           title="Endless Holiday Cheer"
-          subtitle="Everything Already Out in the World"
-          start={0}
-          count={12}
+          items={featuredReleases}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
+          onPlayChime={handlePlayChime}
+          playingId={playingTrack}
         />
 
         <div className="flex justify-center">
@@ -95,29 +131,13 @@ export const App: React.FC = () => {
           />
         </div>
 
-        <section className="mt-4">
-          <h2 className="font-handwriting text-4xl sm:text-5xl text-amber-100 text-center [text-shadow:0_2px_12px_rgba(0,0,0,0.8)]">
-            Coming This Season
-          </h2>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8">
-            {newReleases.map((release) => (
-              <ReleaseCardWithUpload
-                key={release.id}
-                release={release}
-                customImage={uploadedPhotos[release.id] || null}
-                onUploadImage={handleUploadImage}
-                onPlayChime={handlePlayChime}
-                isPlaying={playingTrack === release.id}
-              />
-            ))}
-          </div>
-        </section>
-
         <GiftOfChristmasPast
-          title="And More"
-          start={12}
+          title="And More Holiday Hits"
+          items={remainingReleases}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
+          onPlayChime={handlePlayChime}
+          playingId={playingTrack}
         />
 
         <footer className="mt-16 pb-8 flex justify-center">
