@@ -10,38 +10,57 @@ import { audioEngine } from './audio/audioEngine';
 const releaseKey = (release: Release) => `${release.artist}\0${release.title}`;
 
 const comingKeys: Array<[string, string]> = [
-  ['Ryan Peter Murphy', 'Christmas in New England'],
+  ['Ryan Peter Murphy', 'Christmas in New England / “Joy Lives Here (Hallmark Anthem)”'],
   ['Ingrid Andress', '“Snowed In With Me”'],
+  ['Dasha', '“Something To Believe In”'],
   ['The Neighbourhood', '“Why’d You Have To Leave”'],
   ['Lucky Daye', 'Present For You'],
   ['Colton Dawson', '“I’ll Be Home For Christmas”'],
   ['Highway Home', 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”'],
+  ['Bea', '“Christmas Makes Me Cry”'],
   ['Slater Nalley', '“January (w/The Castellows)”'],
   ['adore', '“I’ll Hold On For Christmas”'],
   ['Jenna Raine', '“Frosty / A Baby Was Born”'],
   ['Dan + Shay', '“It’s Beginning To Look A Lot Like Christmas”'],
   ['The Creekers', '“Mary, Did You Know?” (w/ The Band Loula) / “Christmas Time’s a Comin’”'],
+  ['Chris Janson', '“Reason For The Season”'],
+  ['Morgan Wade', '“Christmas List”'],
   ['Tyler Braden', '“A Lot Like Christmas”'],
   ['Hailey Hutcheson', '“Bells of Christmas Eve”'],
 ];
 
-const cheerKeys: Array<[string, string]> = [
-  ['Josh Groban', 'Noël'],
+const endlessKeys: Array<[string, string]> = [
+  ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
   ['Dan + Shay', '“Officially Christmas”'],
   ['Cher', 'Christmas'],
+  ['Josh Groban', 'Noël'],
   ['Teddy Swims', 'A Very Teddy Christmas'],
-  ['Patrick Droney', '“All I Want for Christmas Is You”'],
   ['Dasha', '“Driving Home For Christmas”'],
-  ['Alex Isley', '“The Christmas Song”'],
+  ['Patrick Droney', '“All I Want for Christmas Is You”'],
   ['Alex Crichton', '“What If I Call (Merry Christmas, i miss you)”'],
-  ['Cody Johnson', 'A Cody Johnson Christmas'],
-  ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
-  ['Maddox Batson', '“Home for the Holidays”'],
-  ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
-  ['Brandy Clark', '“My Favorite Christmas / I’ll Be Home For Christmas”'],
   ['Dolly Parton', 'A Holly Dolly Christmas (Ultimate Deluxe Edition)'],
+  ['Brandy Clark', '“My Favorite Christmas / I’ll Be Home For Christmas”'],
   ['The Goo Goo Dolls', 'It’s Christmas All Over'],
   ['Faith Hill', 'Joy To The World'],
+  ['Alex Isley', '“The Christmas Song”'],
+  ['Cody Johnson', 'A Cody Johnson Christmas'],
+  ['Maddox Batson', '“Home for the Holidays”'],
+  ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
+];
+
+const moreKeys: Array<[string, string]> = [
+  ['Griff', '“Pure Imagination”'],
+  ['Warren Zeiders', '“How Great Thou Art”'],
+  ['Saweetie', 'Dear Big Santa: “Big Santa / I Want You This Christmas”'],
+  ['Gabby Barrett', '“Where Are You Christmas”'],
+  ['Green Day', '“Xmas Time of Year”'],
+  ['Dan + Shay', '“Long Live Christmas”'],
+  ['Anna Rae', '“Christmas Eve”'],
+  ['Honey Bxby', '“All I Want”'],
+  ['My Chemical Romance', '“All I Want For Christmas is You - 2005”'],
+  ['Morgan Wade', 'Christmas in My Dreams'],
+  ['Anna Rae', '“Shouldn’t It Be Christmas”'],
+  ['NLE Choppa', 'What A Christmas'],
 ];
 
 const catalogue = catalogueReleases();
@@ -56,12 +75,8 @@ const pick = (keys: Array<[string, string]>) =>
     return release;
   });
 const comingReleases = pick(comingKeys);
-const cheerReleases = pick(cheerKeys);
-const placed = new Set([...comingReleases, ...cheerReleases].map(releaseKey));
-const remainingReleases = [
-  ...previousOrder.filter((release) => !placed.has(releaseKey(release))),
-  ...addedReleases.filter((release) => !placed.has(releaseKey(release))),
-];
+const endlessReleases = pick(endlessKeys);
+const moreReleases = pick(moreKeys);
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'main' | 'dolly'>('main');
@@ -151,9 +166,9 @@ export const App: React.FC = () => {
         </div>
 
         <GiftOfChristmasPast
-          title="Endless Holiday Cheer"
+          title="Endless Holiday Hits"
           subtitle="Everything Already Out in the World"
-          items={cheerReleases}
+          items={endlessReleases}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
           onPlayChime={handlePlayChime}
@@ -161,8 +176,8 @@ export const App: React.FC = () => {
         />
 
         <GiftOfChristmasPast
-          title="And More Holiday Hits"
-          items={remainingReleases}
+          title="And More Holiday Cheer"
+          items={moreReleases}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
           onPlayChime={handlePlayChime}

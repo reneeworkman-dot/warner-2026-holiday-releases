@@ -18,11 +18,11 @@ export const newReleases: Release[] = [
   {
     id: 'ryan-peter-murphy',
     artist: 'Ryan Peter Murphy',
-    coverImage: 'covers/ryan-peter-murphy.jpg',
-    title: 'Christmas in New England',
+    coverImage: 'covers/ryan-peter-murphy-combo.jpg',
+    title: 'Christmas in New England / “Joy Lives Here (Hallmark Anthem)”',
     genre: 'Holiday',
     label: 'WR',
-    bullets: facts('Single · Oct 9, 2026', 'Album · Oct 23, 2026', 'Genre: Holiday'),
+    bullets: facts('Single · Oct 9, 2026', 'Album · Oct 23, 2026', 'Hallmark Single · Oct 16, 2026', 'Genre: Holiday'),
   },
   {
     id: 'lucky-daye-2026',
