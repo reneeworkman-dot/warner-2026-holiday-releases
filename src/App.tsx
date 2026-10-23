@@ -4,7 +4,7 @@ import { WarnerLogo } from './components/WarnerLogo';
 import { DollyOrnament } from './components/DollyOrnament';
 import { DollyMemorialPage } from './components/DollyMemorialPage';
 import { GiftOfChristmasPast, catalogueReleases } from './components/GiftOfChristmasPast';
-import { newReleases, Release } from './data/catalogFull';
+import { addedReleases, newReleases, Release } from './data/catalogFull';
 import { audioEngine } from './audio/audioEngine';
 
 const releaseKey = (release: Release) => `${release.artist}\0${release.title}`;
@@ -34,7 +34,7 @@ const cheerKeys: Array<[string, string]> = [
   ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
   ['Maddox Batson', '“Home for the Holidays”'],
   ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
-  ['Brandy Clark', '“My Favorite Christmas”'],
+  ['Brandy Clark', '“My Favorite Christmas / I’ll Be Home For Christmas”'],
   ['Dolly Parton', 'A Holly Dolly Christmas (Ultimate Deluxe Edition)'],
   ['The Goo Goo Dolls', 'It’s Christmas All Over'],
   ['Faith Hill', 'Joy To The World'],
@@ -54,7 +54,10 @@ const pick = (keys: Array<[string, string]>) =>
 const comingReleases = pick(comingKeys);
 const cheerReleases = pick(cheerKeys);
 const placed = new Set([...comingReleases, ...cheerReleases].map(releaseKey));
-const remainingReleases = previousOrder.filter((release) => !placed.has(releaseKey(release)));
+const remainingReleases = [
+  ...previousOrder.filter((release) => !placed.has(releaseKey(release))),
+  ...addedReleases,
+];
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'main' | 'dolly'>('main');
