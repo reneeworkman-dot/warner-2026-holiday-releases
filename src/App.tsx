@@ -11,13 +11,14 @@ const releaseKey = (release: Release) => `${release.artist}\0${release.title}`;
 
 const comingKeys: Array<[string, string]> = [
   ['Ryan Peter Murphy', 'Christmas in New England'],
+  ['Ingrid Andress', '“Snowed In With Me”'],
   ['The Neighbourhood', '“Why’d You Have To Leave”'],
   ['Lucky Daye', 'Present For You'],
+  ['Colton Dawson', '“I’ll Be Home For Christmas”'],
   ['Highway Home', 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”'],
+  ['Slater Nalley', '“January (w/The Castellows)”'],
   ['adore', '“I’ll Hold On For Christmas”'],
   ['Jenna Raine', '“Frosty / A Baby Was Born”'],
-  ['Ingrid Andress', '“Snowed In With Me”'],
-  ['Colton Dawson', '“I’ll Be Home For Christmas”'],
 ];
 
 const cheerKeys: Array<[string, string]> = [
