@@ -196,6 +196,7 @@ export const addedReleases: Release[] = [
   {
     id: 'ryan-peter-murphy-joy-lives-here',
     artist: 'Ryan Peter Murphy',
+    coverImage: 'covers/ryan-peter-murphy-joy.jpg',
     title: '“Joy Lives Here (Hallmark Anthem)”',
     format: 'Single',
     genre: 'Holiday / Pop',
