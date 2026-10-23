@@ -206,6 +206,7 @@ export const addedReleases: Release[] = [
   {
     id: 'bea-christmas-makes-me-cry',
     artist: 'Bea',
+    coverImage: 'covers/bea.jpg',
     title: '“Christmas Makes Me Cry”',
     format: 'Single',
     genre: 'Holiday',
@@ -428,15 +429,6 @@ export const pastReleases = [
         date: 'Nov 7, 2025',
         focus: '“Where Are You Christmas”',
         bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas” (off the deluxe)', 'Single released Oct 24, 2025'),
-      },
-      {
-        artist: 'Suubi',
-        title: '“Last Christmas”',
-        coverImage: 'covers/suubi.jpg',
-        format: 'Single',
-        genre: 'Holiday',
-        date: 'TBD',
-        bullets: facts('Genre: Holiday', 'Cover'),
       },
       {
         artist: 'Dan + Shay',
