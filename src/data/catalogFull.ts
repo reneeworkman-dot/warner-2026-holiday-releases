@@ -229,6 +229,7 @@ export const addedReleases: Release[] = [
   {
     id: 'the-creekers',
     artist: 'The Creekers',
+    coverImage: 'covers/the-creekers.jpg',
     title: '“Mary, Did You Know?” (w/ The Band Loula) / “Christmas Time’s a Comin’”',
     format: '2 Pack Single',
     genre: 'Holiday',

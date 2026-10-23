@@ -20,6 +20,8 @@ const comingKeys: Array<[string, string]> = [
   ['adore', '“I’ll Hold On For Christmas”'],
   ['Jenna Raine', '“Frosty / A Baby Was Born”'],
   ['Dan + Shay', '“It’s Beginning To Look A Lot Like Christmas”'],
+  ['The Creekers', '“Mary, Did You Know?” (w/ The Band Loula) / “Christmas Time’s a Comin’”'],
+  ['Tyler Braden', '“A Lot Like Christmas”'],
 ];
 
 const cheerKeys: Array<[string, string]> = [
@@ -43,7 +45,7 @@ const cheerKeys: Array<[string, string]> = [
 
 const catalogue = catalogueReleases();
 const previousOrder = [...catalogue.slice(0, 12), ...newReleases, ...catalogue.slice(12)];
-const byKey = new Map(previousOrder.map((release) => [releaseKey(release), release]));
+const byKey = new Map([...previousOrder, ...addedReleases].map((release) => [releaseKey(release), release]));
 const pick = (keys: Array<[string, string]>) =>
   keys.map(([artist, title]) => {
     const release = byKey.get(`${artist}\0${title}`);
@@ -57,7 +59,7 @@ const cheerReleases = pick(cheerKeys);
 const placed = new Set([...comingReleases, ...cheerReleases].map(releaseKey));
 const remainingReleases = [
   ...previousOrder.filter((release) => !placed.has(releaseKey(release))),
-  ...addedReleases,
+  ...addedReleases.filter((release) => !placed.has(releaseKey(release))),
 ];
 
 export const App: React.FC = () => {
