@@ -22,6 +22,7 @@ const comingKeys: Array<[string, string]> = [
   ['Dan + Shay', '“It’s Beginning To Look A Lot Like Christmas”'],
   ['The Creekers', '“Mary, Did You Know?” (w/ The Band Loula) / “Christmas Time’s a Comin’”'],
   ['Tyler Braden', '“A Lot Like Christmas”'],
+  ['Hailey Hutcheson', '“Bells of Christmas Eve”'],
 ];
 
 const cheerKeys: Array<[string, string]> = [
