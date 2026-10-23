@@ -18,7 +18,7 @@ export const newReleases: Release[] = [
   {
     id: 'ryan-peter-murphy',
     artist: 'Ryan Peter Murphy',
-    coverImage: 'covers/ryan-peter-murphy-combo.jpg',
+    coverImage: 'covers/ryan-peter-murphy.jpg',
     title: 'Christmas in New England / “Joy Lives Here (Hallmark Anthem)”',
     genre: 'Holiday',
     label: 'WR',
