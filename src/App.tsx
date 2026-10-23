@@ -9,40 +9,51 @@ import { audioEngine } from './audio/audioEngine';
 
 const releaseKey = (release: Release) => `${release.artist}\0${release.title}`;
 
-const featuredKeys: Array<[string, string]> = [
+const comingKeys: Array<[string, string]> = [
   ['Ryan Peter Murphy', 'Christmas in New England'],
-  ['Dan + Shay', '“Officially Christmas”'],
   ['The Neighbourhood', '“Why’d You Have To Leave”'],
-  ['Dasha', '“Driving Home For Christmas”'],
   ['Lucky Daye', 'Present For You'],
-  ['Alex Isley', '“The Christmas Song”'],
-  ['Maddox Batson', '“Home for the Holidays”'],
-  ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
-  ['Alex Crichton', '“What If I Call (Merry Christmas, i miss you)”'],
-  ['Brandy Clark', '“My Favorite Christmas”'],
+  ['Highway Home', 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”'],
+  ['adore', '“I’ll Hold On For Christmas”'],
+  ['Jenna Raine', '“Frosty / A Baby Was Born”'],
+  ['Ingrid Andress', '“Snowed In With Me”'],
+  ['Colton Dawson', '“I’ll Be Home For Christmas”'],
+];
+
+const cheerKeys: Array<[string, string]> = [
+  ['Josh Groban', 'Noël'],
+  ['Dan + Shay', '“Officially Christmas”'],
   ['Cher', 'Christmas'],
-  ['Dolly Parton', 'A Holly Dolly Christmas (Ultimate Deluxe Edition)'],
-  ['Cody Johnson', 'A Cody Johnson Christmas'],
-  ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
   ['Teddy Swims', 'A Very Teddy Christmas'],
   ['Patrick Droney', '“All I Want for Christmas Is You”'],
+  ['Dasha', '“Driving Home For Christmas”'],
+  ['Alex Isley', '“The Christmas Song”'],
+  ['Alex Crichton', '“What If I Call (Merry Christmas, i miss you)”'],
+  ['Cody Johnson', 'A Cody Johnson Christmas'],
+  ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
+  ['Maddox Batson', '“Home for the Holidays”'],
+  ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
+  ['Brandy Clark', '“My Favorite Christmas”'],
+  ['Dolly Parton', 'A Holly Dolly Christmas (Ultimate Deluxe Edition)'],
   ['The Goo Goo Dolls', 'It’s Christmas All Over'],
   ['Faith Hill', 'Joy To The World'],
-  ['Josh Groban', 'Noël'],
 ];
 
 const catalogue = catalogueReleases();
 const previousOrder = [...catalogue.slice(0, 12), ...newReleases, ...catalogue.slice(12)];
 const byKey = new Map(previousOrder.map((release) => [releaseKey(release), release]));
-const featuredReleases = featuredKeys.map(([artist, title]) => {
-  const release = byKey.get(`${artist}\0${title}`);
-  if (!release) {
-    throw new Error(`Missing release: ${artist} — ${title}`);
-  }
-  return release;
-});
-const featuredSet = new Set(featuredReleases.map(releaseKey));
-const remainingReleases = previousOrder.filter((release) => !featuredSet.has(releaseKey(release)));
+const pick = (keys: Array<[string, string]>) =>
+  keys.map(([artist, title]) => {
+    const release = byKey.get(`${artist}\0${title}`);
+    if (!release) {
+      throw new Error(`Missing release: ${artist} — ${title}`);
+    }
+    return release;
+  });
+const comingReleases = pick(comingKeys);
+const cheerReleases = pick(cheerKeys);
+const placed = new Set([...comingReleases, ...cheerReleases].map(releaseKey));
+const remainingReleases = previousOrder.filter((release) => !placed.has(releaseKey(release)));
 
 export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'main' | 'dolly'>('main');
@@ -114,8 +125,8 @@ export const App: React.FC = () => {
         </header>
 
         <GiftOfChristmasPast
-          title="Endless Holiday Cheer"
-          items={featuredReleases}
+          title="Coming This Season"
+          items={comingReleases}
           uploadedPhotos={uploadedPhotos}
           onUploadImage={handleUploadImage}
           onPlayChime={handlePlayChime}
@@ -130,6 +141,16 @@ export const App: React.FC = () => {
             }}
           />
         </div>
+
+        <GiftOfChristmasPast
+          title="Endless Holiday Cheer"
+          subtitle="Everything Already Out in the World"
+          items={cheerReleases}
+          uploadedPhotos={uploadedPhotos}
+          onUploadImage={handleUploadImage}
+          onPlayChime={handlePlayChime}
+          playingId={playingTrack}
+        />
 
         <GiftOfChristmasPast
           title="And More Holiday Hits"
