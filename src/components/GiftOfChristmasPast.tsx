@@ -47,16 +47,20 @@ export const GiftOfChristmasPast: React.FC<Props> = ({
         </p>
       )}
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-x-8">
         {items.map((release) => (
-          <ReleaseCardWithUpload
+          <div
             key={release.id}
-            release={release}
-            customImage={uploadedPhotos[release.id] || null}
-            onUploadImage={onUploadImage}
-            onPlayChime={onPlayChime ?? (() => undefined)}
-            isPlaying={playingId === release.id}
-          />
+            className="md:col-span-2 md:nth-[3n+1]:nth-last-2:col-start-2 md:nth-[3n+2]:last:col-start-4"
+          >
+            <ReleaseCardWithUpload
+              release={release}
+              customImage={uploadedPhotos[release.id] || null}
+              onUploadImage={onUploadImage}
+              onPlayChime={onPlayChime ?? (() => undefined)}
+              isPlaying={playingId === release.id}
+            />
+          </div>
         ))}
       </div>
     </section>
