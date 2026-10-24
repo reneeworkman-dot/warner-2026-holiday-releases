@@ -51,7 +51,7 @@ export const GiftOfChristmasPast: React.FC<Props> = ({
         {items.map((release) => (
           <div
             key={release.id}
-            className="md:col-span-2 md:nth-[3n+1]:nth-last-2:col-start-2 md:nth-[3n+2]:last:col-start-4"
+            className="md:col-span-2 md:nth-[3n+1]:nth-last-2:col-start-2 md:nth-[3n+2]:last:col-start-4 md:nth-[3n+1]:last:col-start-3"
           >
             <ReleaseCardWithUpload
               release={release}
