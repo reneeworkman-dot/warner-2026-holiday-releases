@@ -30,6 +30,7 @@ const comingKeys: Array<[string, string]> = [
 ];
 
 const endlessKeys: Array<[string, string]> = [
+  ['Dan + Shay', '“Officially Christmas”'],
   ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
   ['Cher', 'Christmas'],
   ['Josh Groban', 'Noël'],
@@ -60,7 +61,6 @@ const moreKeys: Array<[string, string]> = [
   ['Morgan Wade', 'Christmas in My Dreams'],
   ['Anna Rae', '“Shouldn’t It Be Christmas”'],
   ['NLE Choppa', 'What A Christmas'],
-  ['Dan + Shay', '“Officially Christmas”'],
 ];
 
 const catalogue = catalogueReleases();
