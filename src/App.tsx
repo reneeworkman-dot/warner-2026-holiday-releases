@@ -30,8 +30,8 @@ const comingKeys: Array<[string, string]> = [
 ];
 
 const endlessKeys: Array<[string, string]> = [
-  ['Dan + Shay', '“Officially Christmas”'],
   ['Michael Bublé', 'Christmas (Deluxe 10th Anniversary Edition)'],
+  ['Dan + Shay', '“Officially Christmas”'],
   ['Cher', 'Christmas'],
   ['Josh Groban', 'Noël'],
   ['Teddy Swims', 'A Very Teddy Christmas'],
