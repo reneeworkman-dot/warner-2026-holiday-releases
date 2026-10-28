@@ -10,6 +10,7 @@ export type Release = {
   coverImage?: string;
   bullets?: string[];
   notes?: string;
+  listenUrl?: string;
 };
 
 const facts = (...parts: Array<string | undefined>) => parts.filter((part): part is string => Boolean(part));
@@ -144,6 +145,7 @@ export const newReleases: Release[] = [
     date: 'Nov 13, 2026',
     label: 'WR',
     bullets: facts('Genre: Pop'),
+    listenUrl: 'https://jennaraine.lnk.to/streaming',
   },
   {
     id: 'tyler-braden',

@@ -69,6 +69,19 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
               <span>{bullet}</span>
             </li>
           ))}
+          {release.listenUrl && (
+            <li className="flex gap-1.5 text-sm text-amber-50/95 leading-snug [text-shadow:0_1px_6px_rgba(0,0,0,0.75)]">
+              <span className="text-amber-200 shrink-0">❄</span>
+              <a
+                href={release.listenUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-amber-200/70 underline-offset-2 hover:text-white"
+              >
+                listen here
+              </a>
+            </li>
+          )}
         </ul>
       </div>
     </article>
