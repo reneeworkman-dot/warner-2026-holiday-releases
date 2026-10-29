@@ -46,6 +46,7 @@ const endlessKeys: Array<[string, string]> = [
   ['Cody Johnson', 'A Cody Johnson Christmas'],
   ['Maddox Batson', '“Home for the Holidays”'],
   ['Gabby Barrett', 'Carols and Candlelight (Deluxe)'],
+  ['Brett Eldredge', 'Glow'],
 ];
 
 const moreKeys: Array<[string, string]> = [

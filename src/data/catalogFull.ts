@@ -464,6 +464,15 @@ export const pastReleases = [
         bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas” (off the deluxe)', 'Single released Oct 24, 2025'),
       },
       {
+        artist: 'Brett Eldredge',
+        title: 'Glow',
+        coverImage: 'covers/brett-eldredge.jpg',
+        format: 'Album',
+        genre: 'Jazz / Holiday',
+        date: 'Oct 28, 2016',
+        bullets: facts('Genre: Jazz / Holiday'),
+      },
+      {
         artist: 'Dan + Shay',
         title: '“Long Live Christmas”',
         coverImage: 'covers/dan-shay-long-live-christmas.jpg',
