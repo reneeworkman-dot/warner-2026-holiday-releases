@@ -40,7 +40,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'highway-home',
-    coverImage: 'covers/highway-home.jpg',
+    coverImage: 'covers/highway-home-for-christmas.jpg',
     artist: 'Highway Home',
     title: 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”',
     format: '2 Pack Single',
