@@ -442,6 +442,7 @@ export const pastReleases = [
         genre: 'R&B / Holiday',
         date: 'Nov 14, 2025',
         bullets: facts('Genre: R&B / Holiday', 'Cover'),
+        listenUrl: 'https://alexisley.lnk.to/streaming',
       },
       {
         artist: 'Warren Zeiders',
