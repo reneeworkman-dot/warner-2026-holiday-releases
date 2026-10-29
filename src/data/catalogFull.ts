@@ -88,7 +88,7 @@ export const newReleases: Release[] = [
   },
   {
     id: 'dan-shay-beginning',
-    coverImage: 'covers/dan-shay-beginning.jpg',
+    coverImage: 'covers/dan-shay-its-beginning.jpg',
     artist: 'Dan + Shay',
     title: '“It’s Beginning To Look A Lot Like Christmas”',
     format: 'Single',
