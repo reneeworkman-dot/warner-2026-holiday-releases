@@ -24,6 +24,7 @@ export const newReleases: Release[] = [
     genre: 'Holiday',
     label: 'WR',
     bullets: facts('Single · Oct 9, 2026', 'Album · Oct 23, 2026', 'Hallmark Single · Oct 16, 2026', 'Genre: Holiday'),
+    listenUrl: 'https://ryanpetermurphy.lnk.to/streaming',
   },
   {
     id: 'lucky-daye-2026',
@@ -35,6 +36,7 @@ export const newReleases: Release[] = [
     date: 'Nov 23, 2026',
     label: 'WR',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://luckydaye.lnk.to/streaming',
   },
   {
     id: 'highway-home',
@@ -46,6 +48,7 @@ export const newReleases: Release[] = [
     date: 'Nov 6, 2026',
     label: 'WR',
     bullets: facts('Genre: Country'),
+    listenUrl: 'https://highwayhome.lnk.to/streaming',
   },
   {
     id: 'the-neighbourhood',
@@ -57,6 +60,7 @@ export const newReleases: Release[] = [
     date: 'Nov 6, 2026',
     label: 'WR',
     bullets: facts('Genre: Alternative'),
+    listenUrl: 'https://nbhd.lnk.to/streaming',
   },
   {
     id: 'dasha-something-to-believe-in',
@@ -68,6 +72,7 @@ export const newReleases: Release[] = [
     date: 'Nov 6, 2026',
     label: 'WR',
     bullets: facts('Genre: Holiday / Country'),
+    listenUrl: 'https://dasha.lnk.to/streaming',
   },
   {
     id: 'adore-2026',
@@ -79,6 +84,7 @@ export const newReleases: Release[] = [
     date: 'Nov 6, 2026',
     label: 'WR',
     bullets: facts('Genre: Pop / Alternative'),
+    listenUrl: 'https://adore.lnk.to/streaming',
   },
   {
     id: 'dan-shay-beginning',
@@ -205,6 +211,7 @@ export const addedReleases: Release[] = [
     date: 'Oct 16, 2026',
     label: 'WR',
     bullets: facts('Genre: Holiday / Pop'),
+    listenUrl: 'https://ryanpetermurphy.lnk.to/streaming',
   },
   {
     id: 'bea-christmas-makes-me-cry',
@@ -216,6 +223,7 @@ export const addedReleases: Release[] = [
     date: 'Nov 13, 2026',
     label: 'WR UK',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://bea.lnk.to/streaming',
   },
   {
     id: 'chris-janson',
@@ -265,6 +273,7 @@ export const pastReleases = [
         date: 'Nov 12, 2021',
         focus: '“It’s Beginning To Look a Lot Like Christmas”',
         bullets: facts('Genre: Pop / Holiday', 'Focus: “It’s Beginning To Look a Lot Like Christmas”'),
+        listenUrl: 'https://michaelbuble.lnk.to/streaming',
       },
       {
         artist: 'Josh Groban',
@@ -275,6 +284,7 @@ export const pastReleases = [
         date: 'Oct 9, 2007',
         focus: '“Believe”',
         bullets: facts('Genre: Holiday', 'Focus: “Believe”'),
+        listenUrl: 'https://joshgroban.lnk.to/listen',
       },
       {
         artist: 'Cher',
@@ -285,6 +295,7 @@ export const pastReleases = [
         date: 'Oct 20, 2023',
         focus: '“DJ Play A Christmas Song”',
         bullets: facts('Genre: Pop / Dance-pop / Holiday', 'Focus: “DJ Play A Christmas Song”'),
+        listenUrl: 'https://cher.lnk.to/streaming',
       },
       {
         artist: 'Dolly Parton',
@@ -295,6 +306,7 @@ export const pastReleases = [
         date: 'Oct 14, 2022',
         focus: '“Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)”',
         bullets: facts('Genre: Country / Holiday', 'Focus: “Cuddle Up, Cozy Down Christmas (feat. Michael Bublé)”'),
+        listenUrl: 'https://DollyParton.lnk.to/HollyDolly',
       },
       {
         artist: 'The Goo Goo Dolls',
@@ -305,6 +317,7 @@ export const pastReleases = [
         date: 'Oct 30, 2020',
         focus: '“Christmas All Over Again”',
         bullets: facts('Genre: Holiday / Pop-Rock', 'Focus: “Christmas All Over Again”'),
+        listenUrl: 'https://googoodolls.lnk.to/listen',
       },
       {
         artist: 'Faith Hill',
@@ -325,6 +338,7 @@ export const pastReleases = [
         date: 'Oct 15, 2021',
         focus: '“Silent Night”',
         bullets: facts('Genre: Contemporary R&B / Holiday', 'Focus: “Silent Night”'),
+        listenUrl: 'https://teddyswims.lnk.to/streaming',
       },
       {
         artist: 'Saweetie',
@@ -352,6 +366,7 @@ export const pastReleases = [
         genre: 'Country / Americana',
         date: 'Oct 27, 2023',
         bullets: facts('Genre: Country / Americana'),
+        listenUrl: 'https://brandyclark.lnk.to/streaming',
       },
       {
         artist: 'Patrick Droney',
@@ -361,6 +376,7 @@ export const pastReleases = [
         genre: 'Soul / Pop',
         date: 'Nov 18, 2020',
         bullets: facts('Genre: Soul / Pop'),
+        listenUrl: 'https://patrickdroney.lnk.to/streaming',
       },
       {
         artist: 'Green Day',
@@ -397,6 +413,7 @@ export const pastReleases = [
         genre: 'Country / Holiday',
         date: 'Nov 7, 2025',
         bullets: facts('Genre: Country / Holiday', 'Cover'),
+        listenUrl: 'https://dasha.lnk.to/streaming',
       },
       {
         artist: 'Maddox Batson',
@@ -406,6 +423,7 @@ export const pastReleases = [
         genre: 'Country / Holiday',
         date: 'Nov 13, 2025',
         bullets: facts('Last Christmas / I’ll Be Home For Christmas', 'Genre: Country / Holiday', 'Originals'),
+        listenUrl: 'https://maddoxbatson.lnk.to/streaming',
       },
       {
         artist: 'Honey Bxby',

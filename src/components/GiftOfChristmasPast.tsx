@@ -23,6 +23,7 @@ export const catalogueReleases = (): Release[] =>
       date: item.date,
       bullets: item.bullets,
       coverImage: item.coverImage,
+      listenUrl: 'listenUrl' in item ? item.listenUrl : undefined,
     })),
   );
 
