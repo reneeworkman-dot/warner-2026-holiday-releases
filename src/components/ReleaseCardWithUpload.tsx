@@ -51,7 +51,7 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
 
       <div className="pt-3">
         {[release.date, release.format].some(Boolean) && (
-          <p className="font-note text-xs text-amber-200/90">
+          <p className="font-note text-base text-amber-200/90">
             {[release.date, release.format].filter(Boolean).join(' · ')}
           </p>
         )}

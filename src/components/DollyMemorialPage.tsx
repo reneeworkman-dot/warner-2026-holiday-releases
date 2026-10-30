@@ -42,7 +42,7 @@ export const DollyMemorialPage: React.FC<Props> = ({ onBack }) => {
         </header>
 
         <section className="mt-14">
-          <p className="font-note text-sm text-amber-200/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
+          <p className="font-note text-base text-amber-200/90 [text-shadow:0_1px_6px_rgba(0,0,0,0.8)]">
             {dollyMemorial.date} · {dollyMemorial.format}
           </p>
           <h2 className="font-serif text-3xl text-white mt-1 [text-shadow:0_2px_12px_rgba(0,0,0,0.85)]">
