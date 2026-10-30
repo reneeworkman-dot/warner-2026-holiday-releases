@@ -144,7 +144,9 @@ export const App: React.FC = () => {
 
         <header className="text-center mt-10 mb-6">
           <h1 className="display font-black uppercase text-4xl sm:text-6xl text-white leading-tight tracking-wide [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
-            Warner Records 2026 Holiday Releases
+            Warner Records{' '}
+            <span className="inline-block text-[1.3em] leading-none align-baseline">2026</span>{' '}
+            Holiday Releases
           </h1>
         </header>
 
