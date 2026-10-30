@@ -357,6 +357,7 @@ export const pastReleases = [
         genre: 'Pop',
         date: 'Nov 1, 2024',
         bullets: facts('Genre: Pop'),
+        listenUrl: 'https://griff.lnk.to/streaming',
       },
       {
         artist: 'Brandy Clark',
@@ -386,6 +387,7 @@ export const pastReleases = [
         genre: 'Holiday / Pop-Rock',
         date: 'Dec 24, 2015',
         bullets: facts('Genre: Holiday / Pop-Rock'),
+        listenUrl: 'https://greenday.lnk.to/streaming',
       },
       {
         artist: 'My Chemical Romance',
@@ -395,6 +397,7 @@ export const pastReleases = [
         genre: 'Alternative',
         date: 'Nov 23, 2004',
         bullets: facts('Genre: Alternative'),
+        listenUrl: 'https://mcr.lnk.to/streaming',
       },
       {
         artist: 'Dan + Shay',
@@ -433,6 +436,7 @@ export const pastReleases = [
         genre: 'R&B',
         date: 'Nov 7, 2025',
         bullets: facts('Genre: R&B', 'Original'),
+        listenUrl: 'https://honeybxby.lnk.to/music',
       },
       {
         artist: 'Alex Isley',
@@ -507,6 +511,7 @@ export const pastReleases = [
         genre: 'Hip Hop / Holiday',
         date: 'Dec 6, 2024',
         bullets: facts('Genre: Hip Hop / Holiday'),
+        listenUrl: 'https://nlechoppa.lnk.to/streaming',
       },
       {
         artist: 'Alex Crichton',
