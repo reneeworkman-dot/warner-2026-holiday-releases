@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Release } from '../data/catalogFull';
 
 interface Props {
@@ -12,27 +12,14 @@ interface Props {
 export const ReleaseCardWithUpload: React.FC<Props> = ({
   release,
   customImage,
-  onUploadImage,
 }) => {
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const photo =
     customImage ||
     (release.coverImage ? `${import.meta.env.BASE_URL}${release.coverImage}` : null);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      onUploadImage(release.id, e.target.files[0]);
-    }
-  };
-
   return (
     <article className="py-6 border-b border-white/15">
-      <button
-        type="button"
-        onClick={() => fileInputRef.current?.click()}
-        className="relative block w-full aspect-square overflow-hidden cursor-pointer bg-black/25"
-        title="Add a photo"
-      >
+      <div className="relative block w-full aspect-square overflow-hidden bg-black/25">
         {photo ? (
           <img src={photo} alt={`${release.artist} — ${release.title}`} className="w-full h-full object-cover" />
         ) : (
@@ -40,14 +27,7 @@ export const ReleaseCardWithUpload: React.FC<Props> = ({
             add a photo
           </span>
         )}
-      </button>
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept="image/*"
-        onChange={handleFileChange}
-        className="hidden"
-      />
+      </div>
 
       <div className="pt-3">
         {[release.date, release.format].some(Boolean) && (
