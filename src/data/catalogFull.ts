@@ -96,6 +96,7 @@ export const newReleases: Release[] = [
     date: 'Nov 6, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://DanAndShay.lnk.to/streaming',
   },
   {
     id: 'slater-nalley',
@@ -107,6 +108,7 @@ export const newReleases: Release[] = [
     date: 'Dec 11, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://slaternalley.lnk.to/streaming',
   },
   {
     id: 'ingrid-andress',
@@ -118,6 +120,7 @@ export const newReleases: Release[] = [
     date: 'Oct 30, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://IngridAndress.lnk.to/Streaming',
   },
   {
     id: 'morgan-wade-list',
@@ -129,6 +132,7 @@ export const newReleases: Release[] = [
     date: 'Nov 16, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://MorganWade.lnk.to/streaming',
   },
   {
     id: 'anna-rae-eve',
@@ -163,6 +167,7 @@ export const newReleases: Release[] = [
     date: 'Nov 13, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://TylerBraden.lnk.to/Streaming',
   },
   {
     id: 'hailey-hutcheson',
@@ -174,6 +179,7 @@ export const newReleases: Release[] = [
     date: 'Nov 23, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://haileyhutcheson.lnk.to/Streaming',
   },
   {
     id: 'colton-dawson',
@@ -185,6 +191,7 @@ export const newReleases: Release[] = [
     date: 'Nov 24, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://coltondawson.lnk.to/streaming',
   },
   {
     id: 'anna-rae-shouldnt',
@@ -235,6 +242,7 @@ export const addedReleases: Release[] = [
     date: 'Nov 13, 2026',
     label: 'JOA/NASH',
     bullets: facts('Genre: Holiday / Country'),
+    listenUrl: 'https://ChrisJanson.lnk.to/streaming',
   },
   {
     id: 'the-creekers',
@@ -246,6 +254,7 @@ export const addedReleases: Release[] = [
     date: 'Dec 4, 2026',
     label: 'NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://TheCreekers.lnk.to/streaming',
   },
 ];
 
@@ -328,6 +337,7 @@ export const pastReleases = [
         date: 'Sep 30, 2008',
         focus: '“O Come, All Ye Faithful”',
         bullets: facts('Genre: Holiday / Country', 'Focus: “O Come, All Ye Faithful”'),
+        listenUrl: 'https://FaithHill.lnk.to/streaming',
       },
       {
         artist: 'Teddy Swims',
@@ -407,6 +417,7 @@ export const pastReleases = [
         genre: 'Holiday',
         date: 'Nov 9, 2021',
         bullets: facts('Genre: Holiday'),
+        listenUrl: 'https://DanAndShay.lnk.to/streaming',
       },
       {
         artist: 'Dasha',
@@ -466,6 +477,7 @@ export const pastReleases = [
         date: 'Nov 7, 2025',
         focus: '“Where Are You Christmas”',
         bullets: facts('Genre: Holiday / Country', 'Focus: “Where Are You Christmas” (off the deluxe)', 'Single released Oct 24, 2025'),
+        listenUrl: 'https://GabbyBarrett.lnk.to/streaming',
       },
       {
         artist: 'Brett Eldredge',
@@ -484,6 +496,7 @@ export const pastReleases = [
         genre: 'Holiday',
         date: 'Nov 7, 2025',
         bullets: facts('Genre: Holiday', 'Original'),
+        listenUrl: 'https://DanAndShay.lnk.to/streaming',
       },
       {
         artist: 'Morgan Wade',
@@ -493,6 +506,7 @@ export const pastReleases = [
         genre: 'Holiday / Country',
         date: 'Nov 26, 2025',
         bullets: facts('Genre: Holiday / Country', 'Cover'),
+        listenUrl: 'https://MorganWade.lnk.to/streaming',
       },
       {
         artist: 'Gabby Barrett',
@@ -502,6 +516,7 @@ export const pastReleases = [
         genre: 'Holiday / Country',
         date: 'Oct 24, 2025',
         bullets: facts('Genre: Holiday / Country'),
+        listenUrl: 'https://GabbyBarrett.lnk.to/streaming',
       },
       {
         artist: 'NLE Choppa',
