@@ -144,6 +144,7 @@ export const newReleases: Release[] = [
     date: 'Nov 13, 2026',
     label: 'JOA/NASH',
     bullets: facts('Genre: Holiday'),
+    listenUrl: 'https://annarae.lnk.to/streaming',
   },
   {
     id: 'jenna-raine',
@@ -203,6 +204,7 @@ export const newReleases: Release[] = [
     date: 'Oct 30, 2026',
     label: 'JOA/NASH',
     bullets: facts('Genre: Holiday / Country'),
+    listenUrl: 'https://annarae.lnk.to/streaming',
   },
 ];
 
@@ -358,6 +360,7 @@ export const pastReleases = [
         genre: 'Hip Hop / Holiday',
         date: 'Nov 1, 2024',
         bullets: facts('Genre: Hip Hop / Holiday'),
+        listenUrl: 'https://saweetie.lnk.to/streaming',
       },
       {
         artist: 'Griff',
@@ -467,6 +470,7 @@ export const pastReleases = [
         genre: 'Gospel / Country',
         date: 'Oct 31, 2025',
         bullets: facts('Genre: Gospel / Country', 'Cover'),
+        listenUrl: 'https://warrenzeiders.lnk.to/streaming',
       },
       {
         artist: 'Gabby Barrett',
@@ -536,6 +540,7 @@ export const pastReleases = [
         genre: 'Indie',
         date: 'Dec 5, 2024',
         bullets: facts('Genre: Indie'),
+        listenUrl: 'https://alexcrichton.lnk.to/streaming',
       },
       {
         artist: 'Cody Johnson',
@@ -546,6 +551,7 @@ export const pastReleases = [
         date: 'Nov 21, 2021',
         focus: '“Hat Made Of Mistletoe”',
         bullets: facts('Genre: Country / Holiday', 'Focus: “Hat Made Of Mistletoe”'),
+        listenUrl: 'https://codyjohnson.lnk.to/streaming',
       },
     ],
   },
