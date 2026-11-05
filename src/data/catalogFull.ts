@@ -81,7 +81,7 @@ export const newReleases: Release[] = [
     title: '“I’ll Hold On For Christmas”',
     format: 'Single',
     genre: 'Pop / Alternative',
-    date: 'Nov 6, 2026',
+    date: 'Nov 20, 2026',
     label: 'WR',
     bullets: facts('Genre: Pop / Alternative'),
     listenUrl: 'https://adore.lnk.to/streaming',
