@@ -17,7 +17,7 @@ const comingKeys: Array<[string, string]> = [
   ['Lucky Daye', 'Present For You'],
   ['Colton Dawson', '“I’ll Be Home For Christmas”'],
   ['Highway Home', 'Highway Home For Christmas: “Please Come Home For Christmas / O Holy Night”'],
-  ['Bea', '“Christmas Makes Me Cry”'],
+  ['Bea', '“Christmas Makes Me Cry / Have Yourself a Merry Little Christmas”'],
   ['Slater Nalley', '“January (w/The Castellows)”'],
   ['adore', '“I’ll Hold On For Christmas”'],
   ['Jenna Raine', '“Frosty / A Baby Was Born”'],
